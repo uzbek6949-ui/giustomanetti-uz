@@ -79,6 +79,25 @@ ffmpeg kerak. Agar PATH da boʻlmasa: `FFMPEG=C:/yo'l/ffmpeg.exe node make-clips
 
 ---
 
+## Rasmlar optimizatsiyasi
+
+Barcha rasmlar sayt ichida (`assets/img/`), tashqi serverga bogʻliqlik yoʻq.
+Har biri ikki shaklda: **WebP** (zamonaviy brauzerlar) va **JPEG** (eskilari).
+HTML da `<picture>` ishlatiladi, brauzer oʻzi tanlaydi.
+
+Qayta ishlash kerak boʻlsa:
+
+```bash
+node optimize-img.mjs    # kichraytiradi va WebP qiladi
+node rewrite-img.mjs     # src/ dagi manzillarni yangilaydi
+node build.mjs           # sahifalarni qayta yigʻadi
+```
+
+ffmpeg kerak: `FFMPEG=C:/yoʻl/ffmpeg.exe node optimize-img.mjs`
+
+Hozirgi ogʻirlik: bosh sahifa ~5 MB (shundan 4 MB video), telefonda ~2,5 MB.
+Boshqa sahifalar 0,5–1,5 MB.
+
 ## Matnni oʻzgartirish
 
 Hamma matn `assets/m-copy.js` ichida, `ru` / `uz` / `en` boʻlimlariga ajratilgan.
@@ -127,13 +146,12 @@ avtomatik zaxira yoʻlga oʻtadi: arizani nusxalaydi va Telegram ochadi.
 
 ## Eslatmalar
 
-1. **Bosh sahifadagi blok rasmlari manetti.com dan olingan** va `assets/img/`
-   ichida saqlanadi (eshop, catalogo, vetrina, academy, gallery, goldchef).
-   Bular bosh kompaniyaning o'z marketing fotolari; rasmiy vakil sifatida
-   ishlatish odatiy, lekin Manetti'dan bir og'iz tasdiq olib qo'yish ma'qul.
-2. **Qolgan rasmlar eski saytdan olinmoqda** (`giustomanetti.uz/wp-content/uploads/`).
-   Eski WordPress oʻchirilsa, rasmlarni yuklab olib `assets/img/` ga qoʻyish
-   va manzillarni almashtirish kerak. Videolar va posterlar repo ichida.
+1. **Bosh sahifadagi blok rasmlari manetti.com dan olingan** (`assets/img/`).
+   Bular bosh kompaniyaning oʻz marketing fotolari; rasmiy vakil sifatida
+   ishlatish odatiy, lekin Manetti'dan bir ogʻiz tasdiq olib qoʻyish maʼqul.
+2. **Eski saytdagi rasmlar koʻchirildi** (`assets/img/wp/`). Endi sayt
+   `giustomanetti.uz/wp-content/` ga bogʻliq emas: eski WordPress oʻchirilsa
+   ham hech narsa buzilmaydi.
 3. **Raqamlar manetti.com dan olingan**: 400+ yil, 15 avlod, 70+ davlat, 29 tus.
 4. **Onlayn doʻkon (savat, toʻlov) yoʻq.** manetti.com da ESHOP bor, bizda
    uning oʻrniga "ariza qoldirish" ishlaydi. Haqiqiy doʻkon alohida ish.
