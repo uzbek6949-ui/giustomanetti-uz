@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Video tekshiruvi</title>
+<style>
+  body{margin:0;background:#111;color:#eee;font:15px/1.6 system-ui,sans-serif;padding:16px 16px 40px}
+  h1{font-size:19px;margin:0 0 4px}
+  p.sub{margin:0 0 18px;color:#999;font-size:13px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  td{padding:7px 4px;border-bottom:1px solid #262626;vertical-align:top}
+  td:first-child{color:#999;width:46%}
+  td:last-child{font-weight:600;word-break:break-word}
+  .ok{color:#6ee787}.bad{color:#ff7b72}.warn{color:#e3b341}
+  video{width:100%;aspect-ratio:16/9;background:#000;margin:16px 0 6px;border-radius:4px}
+  button{width:100%;padding:13px;margin-top:10px;background:#C39F5F;color:#111;border:0;
+         border-radius:4px;font:600 14px system-ui;cursor:pointer}
+  #verdict{margin-top:18px;padding:12px;border-radius:4px;background:#1b1b1b;font-size:14px}
+</style>
+</head>
+<body>
+
+<h1>Fon videosi tekshiruvi</h1>
+<p class="sub">Bu sahifani telefoningizda oching. Natijani menga yuboring.</p>
+
+<video id="v" muted playsinline webkit-playsinline autoplay loop preload="auto"
+       src="assets/video/hero-m.mp4"></video>
+
+<button id="go">Qo'lda o'ynatib ko'rish</button>
+
+<table id="t"></table>
+<div id="verdict">Tekshirilmoqda...</div>
+
+<script>
+var v = document.getElementById('v'), t = document.getElementById('t');
+var rows = {}, autoplayOk = null, playErr = '';
+
+function set(k, val, cls) {
+  if (!rows[k]) {
+    var tr = t.insertRow(); tr.insertCell().textContent = k;
+    rows[k] = tr.insertCell();
+  }
+  rows[k].textContent = val;
+  rows[k].className = cls || '';
+}
+
+function mm(q){ return window.matchMedia && window.matchMedia(q).matches; }
+
+function refresh() {
+  set('Ekran eni', innerWidth + ' px');
+  set('Telefon rejimi', innerWidth <= 860 ? 'ha (yengil nusxa)' : 'yo‘q (to‘liq nusxa)');
+
+  var red = mm('(prefers-reduced-motion: reduce)');
+  set('Harakatni kamaytirish', red ? 'YOQILGAN — video o‘chiriladi' : 'o‘chiq',
+      red ? 'bad' : 'ok');
+
+  var sd = !!(navigator.connection && navigator.connection.saveData);
+  set('Trafik tejash', sd ? 'YOQILGAN — video o‘chiriladi' : 'o‘chiq', sd ? 'bad' : 'ok');
+
+  set('Internet turi', (navigator.connection && navigator.connection.effectiveType) || 'noma’lum');
+  set('Fayl', v.currentSrc ? v.currentSrc.split('/').pop() : '—');
+  set('Yuklandi', v.readyState >= 3 ? 'ha (' + v.readyState + ')' : 'hali emas (' + v.readyState + ')',
+      v.readyState >= 3 ? 'ok' : 'warn');
+  set('O‘lcham', v.videoWidth ? v.videoWidth + '×' + v.videoHeight : '—');
+  set('O‘ynayaptimi', v.paused ? 'YO‘Q' : 'HA', v.paused ? 'bad' : 'ok');
+  set('Vaqt', v.currentTime.toFixed(1) + ' s', v.currentTime > 0 ? 'ok' : 'warn');
+  set('Avto-ishga tushdi', autoplayOk === null ? 'kutilmoqda' : (autoplayOk ? 'HA' : 'YO‘Q'),
+      autoplayOk === false ? 'bad' : (autoplayOk ? 'ok' : 'warn'));
+  if (playErr) set('Sabab', playErr, 'bad');
+  if (v.error) set('Video xatosi', 'kod ' + v.error.code, 'bad');
+
+  var d = document.getElementById('verdict');
+  if (red) d.innerHTML = '❌ Telefoningizda <b>Harakatni kamaytirish</b> yoqilgan. Sayt buni hurmat qilib videoni o‘chiradi. Sozlamalardan o‘chirsangiz video ishlaydi.';
+  else if (sd) d.innerHTML = '❌ Telefoningizda <b>trafik tejash</b> yoqilgan, shuning uchun video yuklanmayapti.';
+  else if (!v.paused && v.currentTime > 0) d.innerHTML = '✅ Video ishlayapti. Muammo boshqa joyda.';
+  else if (autoplayOk === false) d.innerHTML = '⚠️ Telefon avto-ishga tushirishni rad etdi. Odatda bu <b>quvvat tejash rejimi</b> (Low Power Mode). Uni o‘chirib qayta oching.';
+  else if (v.readyState < 3) d.innerHTML = '⚠️ Video hali yuklanmoqda yoki yuklanmadi. Internet sekin bo‘lishi mumkin.';
+  else d.innerHTML = 'Tekshirilmoqda...';
+}
+
+var p = v.play();
+if (p && p.then) p.then(function(){ autoplayOk = true; refresh(); })
+                  .catch(function(e){
+                    /* AbortError = urinish uzildi, haqiqiy to'siq emas */
+                    if (e && e.name === 'AbortError') return;
+                    autoplayOk = false; playErr = (e && e.name) || 'rad etildi'; refresh();
+                  });
+
+['loadeddata','canplay','playing','timeupdate','pause','error','stalled'].forEach(function(e){
+  v.addEventListener(e, refresh);
+});
+document.getElementById('go').onclick = function(){
+  var q = v.play();
+  if (q && q.catch) q.catch(function(e){ playErr = 'qo‘lda ham: ' + ((e && e.name) || 'rad etildi'); refresh(); });
+};
+setInterval(refresh, 1000);
+refresh();
+</script>
+</body>
+</html>

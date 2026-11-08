@@ -111,23 +111,63 @@ document.addEventListener("visibilitychange", checkRv);
 /* Har bir .film ichida poster bor va u sekin suriladi. Agar yonida
    haqiqiy video fayl bo'lsa, u yuklanib posterning ustiga chiqadi.
    Video fayl yo'q bo'lsa, hech narsa buzilmaydi. */
+/* Telefonlar video haqida o'jar: iOS "canplay" ni umuman bermasligi,
+   Android esa birinchi play() ni rad etishi mumkin. Shuning uchun:
+   darhol o'ynatishga urinamiz, bir necha hodisada qayta urinamiz va
+   oxirgi chora sifatida odamning birinchi tegishini kutamiz. */
+var waiting = [];   /* autoplay rad etilgan videolar */
+
+function armGesture() {
+  if (armGesture.done) return;
+  armGesture.done = true;
+  var retry = function () {
+    waiting.splice(0).forEach(function (v) {
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {});
+    });
+  };
+  ["touchstart", "pointerdown", "scroll", "keydown"].forEach(function (e) {
+    window.addEventListener(e, retry, { once: true, passive: true });
+  });
+}
+
 function attachClip(f) {
   var src = f.getAttribute("data-clip");
   if (!src) return;
 
   var v = document.createElement("video");
   v.className = "film__m film__m--clip";
-  v.muted = true; v.loop = true; v.playsInline = true; v.autoplay = true;
-  v.setAttribute("muted", ""); v.setAttribute("playsinline", "");
-  v.preload = "metadata";
-  v.addEventListener("canplay", function () {
-    f.classList.add("playing");
+  /* iOS uchun bular src qo'yilishidan OLDIN atribut sifatida turishi shart */
+  v.setAttribute("muted", "");
+  v.setAttribute("playsinline", "");
+  v.setAttribute("webkit-playsinline", "");
+  v.setAttribute("autoplay", "");
+  v.setAttribute("loop", "");
+  v.muted = true; v.defaultMuted = true; v.loop = true;
+  v.playsInline = true; v.autoplay = true;
+  v.preload = "auto";
+
+  function show() { if (v.currentTime > 0 && !v.paused) f.classList.add("playing"); }
+
+  function tryPlay() {
     var p = v.play();
-    if (p && p.catch) p.catch(function () {});
-  });
+    if (p && p.catch) p.catch(function (e) {
+      /* AbortError = keyingi urinish uzib yubordi, bu xato emas */
+      if (e && e.name === "AbortError") return;
+      if (waiting.indexOf(v) < 0) waiting.push(v);
+      armGesture();
+    });
+  }
+
+  v.addEventListener("loadeddata", tryPlay);
+  v.addEventListener("canplay", tryPlay);
+  v.addEventListener("playing", show);
+  v.addEventListener("timeupdate", show);
   v.addEventListener("error", function () { f.classList.remove("playing"); });
+
   v.src = src;
   f.insertBefore(v, f.querySelector(".film__veil"));
+  tryPlay();
 }
 
 /* assets/video/clips.json dagi ro'yxatdagi fayllargina qo'yiladi, shuning
