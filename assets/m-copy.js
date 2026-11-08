@@ -96,6 +96,7 @@ ru:{
   "ft.p":"Официальный представитель Giusto Manetti Battiloro в Узбекистане. Сусальное золото, материалы для золочения, съедобное золото и серебро.",
   "ft.prod":"Продукция","ft.svc":"Сервис","ft.soc":"Мы в сети",
   "ft.rights":"Все права защищены","ft.made":"Флоренция, Италия · с 1600 года",
+  "film.play":"Видео",
   "fab":"Написать"
 },
 
@@ -185,6 +186,7 @@ uz:{
   "ft.p":"Giusto Manetti Battiloro kompaniyasining Oʻzbekistondagi rasmiy vakili. Zarhal varaq, zarhallash materiallari, yeyiladigan oltin va kumush.",
   "ft.prod":"Mahsulotlar","ft.svc":"Xizmat","ft.soc":"Ijtimoiy tarmoqlar",
   "ft.rights":"Barcha huquqlar himoyalangan","ft.made":"Florentsiya, Italiya · 1600-yildan beri",
+  "film.play":"Video",
   "fab":"Yozish"
 },
 
@@ -274,6 +276,7 @@ en:{
   "ft.p":"Official representative of Giusto Manetti Battiloro in Uzbekistan. Gold leaf, gilding materials, edible gold and silver.",
   "ft.prod":"Products","ft.svc":"Service","ft.soc":"Find us",
   "ft.rights":"All rights reserved","ft.made":"Florence, Italy · since 1600",
+  "film.play":"Play video",
   "fab":"Message us"
 }
 

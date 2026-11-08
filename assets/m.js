@@ -131,7 +131,7 @@ function armGesture() {
   });
 }
 
-function attachClip(f) {
+function attachClip(f, manual) {
   var src = f.getAttribute("data-clip");
   if (!src) return;
 
@@ -165,6 +165,35 @@ function attachClip(f) {
   v.addEventListener("timeupdate", show);
   v.addEventListener("error", function () { f.classList.remove("playing"); });
 
+  /* "Harakatni kamaytirish" yoki "trafik tejash" yoqilgan bo'lsa, videoni
+     o'z-o'zidan ishga tushirmaymiz: bu odamning ongli tanlovi. Lekin uni
+     butunlay yo'q qilmaymiz ham, kichik tugma qo'yamiz: xohlasa yoqadi. */
+  if (manual) {
+    v.removeAttribute("autoplay");
+    v.autoplay = false;
+    v.preload = "none";
+    v.removeEventListener("loadeddata", tryPlay);
+
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "film__play";
+    /* tugma keyinroq tug'iladi, shuning uchun matni shu yerda qo'yiladi */
+    btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l12 7-12 7z"/></svg>';
+    var lbl = document.createElement("span");
+    lbl.setAttribute("data-t", "film.play");
+    lbl.textContent = t("film.play");
+    btn.appendChild(lbl);
+    btn.addEventListener("click", function () {
+      v.preload = "auto";
+      btn.remove();
+      v.play();
+    });
+    f.appendChild(btn);
+    v.src = src;
+    f.insertBefore(v, f.querySelector(".film__veil"));
+    return;
+  }
+
   v.src = src;
   f.insertBefore(v, f.querySelector(".film__veil"));
   tryPlay();
@@ -175,8 +204,13 @@ function attachClip(f) {
 (function () {
   var films = [].slice.call(document.querySelectorAll(".film[data-clip]"));
   if (!films.length || !window.fetch) return;
-  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  if (navigator.connection && navigator.connection.saveData) return;
+
+  /* Bu ikki sozlama yoqilgan bo'lsa video o'z-o'zidan ketmaydi, lekin
+     tugma orqali ishga tushadi. Ilgari video butunlay o'chirilardi va
+     odam nega ko'rinmayotganini bilmasdi. */
+  var manual =
+    (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) ||
+    !!(navigator.connection && navigator.connection.saveData);
 
   fetch("assets/video/clips.json", { cache: "no-cache" })
     .then(function (r) { return r.ok ? r.json() : []; })
@@ -209,7 +243,7 @@ function attachClip(f) {
         for (var i = pending.length - 1; i >= 0; i--) {
           var r = pending[i].getBoundingClientRect();
           if (r.top < h * 1.5 && r.bottom > -h * 0.5) {
-            attachClip(pending[i]);
+            attachClip(pending[i], manual);
             pending.splice(i, 1);
           }
         }

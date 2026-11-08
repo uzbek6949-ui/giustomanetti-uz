@@ -185,6 +185,20 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
   background:linear-gradient(to top, rgba(14,18,28,.78) 0%, rgba(14,18,28,.32) 40%, rgba(14,18,28,.12) 70%, rgba(14,18,28,.3) 100%);
 }
 .film__in{ position:relative; z-index:3 }
+/* "Harakatni kamaytirish" yoqilganlar uchun: video o'z-o'zidan ketmaydi,
+   lekin xohlasa shu tugma bilan yoqadi. */
+.film__play{
+  position:absolute; right:var(--gutter); top:1.2rem; z-index:4;
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.6rem 1rem; border-radius:999px;
+  background:rgba(18,22,30,.62); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.3); color:#fff;
+  font-size:.64rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase;
+  transition:background .2s var(--ease), border-color .2s var(--ease);
+}
+.film__play:hover{ background:var(--gold); border-color:var(--gold) }
+.film__play svg{ width:.8rem; height:.8rem; fill:currentColor }
+@media (max-width:640px){ .film__play{ top:.8rem; padding:.5rem .8rem } }
 
 /* ---------------------------------------------------------------- hero -- */
 .hero{ min-height:clamp(28rem,80svh,44rem); display:grid; align-items:end }
