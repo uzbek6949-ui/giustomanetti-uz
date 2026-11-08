@@ -1,0 +1,13 @@
+# Maxfiy: Telegram tokeni shu yerda. GitHub'ga HECH QACHON tushmasin.
+config.php
+
+# Ishchi vositalar, saytga kerak emas
+scrollcraft/
+.scrollcraft.json
+node_modules/
+
+# Tizim axlati
+Thumbs.db
+desktop.ini
+.DS_Store
+*.log
