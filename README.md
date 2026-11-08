@@ -127,9 +127,13 @@ avtomatik zaxira yoʻlga oʻtadi: arizani nusxalaydi va Telegram ochadi.
 
 ## Eslatmalar
 
-1. **Rasmlar eski saytdan olinmoqda** (`giustomanetti.uz/wp-content/uploads/`).
+1. **Bosh sahifadagi blok rasmlari manetti.com dan olingan** va `assets/img/`
+   ichida saqlanadi (eshop, catalogo, vetrina, academy, gallery, goldchef).
+   Bular bosh kompaniyaning o'z marketing fotolari; rasmiy vakil sifatida
+   ishlatish odatiy, lekin Manetti'dan bir og'iz tasdiq olib qo'yish ma'qul.
+2. **Qolgan rasmlar eski saytdan olinmoqda** (`giustomanetti.uz/wp-content/uploads/`).
    Eski WordPress oʻchirilsa, rasmlarni yuklab olib `assets/img/` ga qoʻyish
    va manzillarni almashtirish kerak. Videolar va posterlar repo ichida.
-2. **Raqamlar manetti.com dan olingan**: 400+ yil, 15 avlod, 70+ davlat, 29 tus.
+3. **Raqamlar manetti.com dan olingan**: 400+ yil, 15 avlod, 70+ davlat, 29 tus.
 3. **Onlayn doʻkon (savat, toʻlov) yoʻq.** manetti.com da ESHOP bor, bizda
    uning oʻrniga "ariza qoldirish" ishlaydi. Haqiqiy doʻkon alohida ish.

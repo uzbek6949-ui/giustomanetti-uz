@@ -32,6 +32,8 @@ ru:{
   "gl.k":"Галерея","gl.t":"Золото<br>в работе",
   "gl.p":"Париж, Нью-Йорк, Лондон, Дубай: золото Манетти заставляет made in Italy сиять по всему миру. Листайте галерею и смотрите, как это выглядит вблизи.",
 
+  "gc.k":"Съедобное золото",
+  "gc.p":"Пудра, крошка, хлопья, лист: с сертифицированным пищевым золотом Gold Chef подача становится событием. Для ресторанов, кондитерских и баров.",
   "ab.eye":"С 1600 года","ab.h":"Пятнадцать поколений<br>одной семьи",
   "ab.p1":"Семья Манетти хранит и обновляет традицию обработки драгоценных металлов в лист с 1600 года: уже более пятнадцати поколений Манетти занимаются искусством золотобитья. Производство золотого, серебряного, палладиевого и платинового листа полностью Made in Italy и происходит на фабрике в Кампи-Бизенцио под Флоренцией.",
   "ab.p2":"Каждая партия проходит строгий контроль качества: подтверждённое происхождение non-conflict золота и прослеживаемость партий на каждом этапе, от производства до продажи. Технология машин соединяется с ручным умением мастеров, и это то, чего не умеет повторить никто.",
@@ -127,6 +129,8 @@ uz:{
   "gl.k":"Galereya","gl.t":"Oltin<br>ish ustida",
   "gl.p":"Parij, Nyu-York, London, Dubay: Manetti oltini made in Italy ni butun dunyoda yaltiratadi. Galereyani varaqlang va yaqindan koʻring.",
 
+  "gc.k":"Yeyiladigan oltin",
+  "gc.p":"Kukun, kukuncha, parcha, varaq: sertifikatlangan Gold Chef oziq-ovqat oltini bilan taqdimot voqeaga aylanadi. Restoran, qandolatxona va barlar uchun.",
   "ab.eye":"1600-yildan beri","ab.h":"Bir oilaning<br>oʻn besh avlodi",
   "ab.p1":"Manetti oilasi 1600-yildan beri qimmatbaho metallarni varaqqa aylantirish anʼanasini saqlab va yangilab kelmoqda: oʻn besh avloddan ortiq Manettilar zarhalchilik sanʼati bilan shugʻullanadi. Oltin, kumush, palladiy va platina varaq ishlab chiqarish toʻliq Made in Italy va Florentsiya yonidagi Kampi-Bizentsio zavodida amalga oshiriladi.",
   "ab.p2":"Har bir partiya qatʼiy sifat nazoratidan oʻtadi: oltinning non-conflict kelib chiqishi tasdiqlangan va har bosqichda partiya kuzatib boriladi. Mashina texnologiyasi usta qoʻlining mahorati bilan birlashadi, buni esa hech kim takrorlay olmaydi.",
@@ -217,6 +221,8 @@ en:{
   "gl.k":"Gallery","gl.t":"Gold<br>at work",
   "gl.p":"Paris, New York, London, Dubai: Manetti gold makes made in Italy shine all over the world. Browse the gallery and see it close up.",
 
+  "gc.k":"Edible gold",
+  "gc.p":"Powder, crumbs, flakes, leaf: with certified Gold Chef edible gold the plate becomes an occasion. For restaurants, pastry kitchens and bars.",
   "ab.eye":"Since 1600","ab.h":"Fifteen generations<br>of one family",
   "ab.p1":"The Manetti family has kept and renewed the craft of beating precious metals into leaf since 1600: for more than fifteen generations the Manettis have practised the art of the battiloro. Production of gold, silver, palladium and platinum leaf is entirely Made in Italy, at the works in Campi Bisenzio outside Florence.",
   "ab.p2":"Every batch passes a strict quality control: certified non-conflict origin and lot traceability at every stage, from production to sale. Machine technology is joined to the hand knowledge of the craftsmen, and that is the part nobody can copy.",
