@@ -135,5 +135,5 @@ avtomatik zaxira yoʻlga oʻtadi: arizani nusxalaydi va Telegram ochadi.
    Eski WordPress oʻchirilsa, rasmlarni yuklab olib `assets/img/` ga qoʻyish
    va manzillarni almashtirish kerak. Videolar va posterlar repo ichida.
 3. **Raqamlar manetti.com dan olingan**: 400+ yil, 15 avlod, 70+ davlat, 29 tus.
-3. **Onlayn doʻkon (savat, toʻlov) yoʻq.** manetti.com da ESHOP bor, bizda
+4. **Onlayn doʻkon (savat, toʻlov) yoʻq.** manetti.com da ESHOP bor, bizda
    uning oʻrniga "ariza qoldirish" ishlaydi. Haqiqiy doʻkon alohida ish.
