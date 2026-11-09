@@ -179,7 +179,11 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 /* A poster that drifts until a real clip is dropped in beside it. */
 .film{ position:relative; overflow:clip; background:var(--navy) }
 .film__m{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover }
-.film__m--poster{ animation:drift 26s ease-in-out infinite alternate; will-change:transform }
+/* Sekin yaqinlashish faqat bosh sahifaning yuqori rasmida ishlaydi.
+   Avval u har bir bannerda ishlardi: oltita katta rasm bir vaqtda
+   harakatlanib, telefonlarda sayt qotib qolardi. */
+.hero .film__m--poster,
+.phero .film__m--poster{ animation:drift 26s ease-in-out infinite alternate; will-change:transform }
 .film__m--clip{ opacity:0; transition:opacity .9s var(--ease); z-index:1 }
 .film.playing .film__m--clip{ opacity:1 }
 /* video chiqqach poster behuda harakatlanmasin */
@@ -452,6 +456,17 @@ html.nojs .rv{ opacity:1; transform:none }
   .gi--w{ grid-column:span 2 }
   .mark b{ font-size:1.05rem }
 }
+/* Telefonda tejamkorlik: fon xiralashtirish (backdrop-filter) va rasm
+   harakati eng ko'p quvvat yeydigan ikki narsa. Kichik ekranda ikkalasi ham
+   o'chadi, o'rniga kartochka foni biroz quyuqroq bo'ladi. */
+@media (max-width:860px){
+  .hero .film__m--poster,
+  .phero .film__m--poster{ animation:none; will-change:auto }
+  .banner__card{ background:rgba(18,22,30,.78); backdrop-filter:none; -webkit-backdrop-filter:none }
+  .banner--light .banner__card{ background:rgba(255,255,255,.95) }
+  .film__play{ backdrop-filter:none; -webkit-backdrop-filter:none; background:rgba(18,22,30,.8) }
+}
+
 @media (prefers-reduced-motion:reduce){
   *{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important }
   .rv{ opacity:1; transform:none }
