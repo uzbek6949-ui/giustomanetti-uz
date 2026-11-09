@@ -11,3 +11,6 @@ Thumbs.db
 desktop.ini
 .DS_Store
 *.log
+
+# hero variantlari, tanlangani keyin ko'chiriladi
+hero-ideas/
