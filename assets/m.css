@@ -435,6 +435,11 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 .ftr h4{ font-family:var(--text); font-size:.66rem; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); margin:0 0 1.1rem }
 .ftr ul{ list-style:none; margin:0; padding:0; display:grid; gap:.6rem }
 .ftr a:hover{ color:#fff }
+/* ijtimoiy tarmoqlar — belgi + nom */
+.soc a{ display:inline-flex; align-items:center; gap:.65rem }
+.soc svg{ width:1.05rem; height:1.05rem; color:var(--gold); flex:none;
+          transition:transform .25s var(--ease) }
+.soc a:hover svg{ transform:translateY(-1px) }
 .ftr .mark b{ color:#F3EBD9 }
 .ftr p{ margin:1rem 0 0; max-width:34ch; line-height:1.75 }
 .ftr__bot{ display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; padding-top:1.4rem;
