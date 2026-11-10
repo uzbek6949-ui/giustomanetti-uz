@@ -342,3 +342,51 @@ applyLang();
 checkRv();
 
 })();
+
+/* ------------------------------------------------- instagram videolari --
+   Kadrlar faqat ekranga yaqinlashganda yuklanadi va ovozsiz aylanadi.
+   "Harakatni kamaytirish" yoqilgan bo'lsa umuman yuklanmaydi: rasm qoladi. */
+(function () {
+  var vs = [].slice.call(document.querySelectorAll("video[data-src]"));
+  if (!vs.length) return;
+
+  var still =
+    (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) ||
+    !!(navigator.connection && navigator.connection.saveData);
+  if (still) return;
+
+  function arm(v) {
+    if (v.dataset.on) return;
+    v.dataset.on = "1";
+    v.muted = true;
+    v.setAttribute("muted", "");
+    v.setAttribute("playsinline", "");
+    v.setAttribute("webkit-playsinline", "");
+    v.loop = true;
+    v.src = v.getAttribute("data-src");
+    var go = function () {
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {});
+      if (v.parentNode) v.parentNode.classList.add("on");
+    };
+    v.addEventListener("canplay", go, { once: true });
+    go();
+  }
+
+  var busy = false;
+  function sweep() {
+    var h = window.innerHeight || 800;
+    for (var i = vs.length - 1; i >= 0; i--) {
+      var r = vs[i].getBoundingClientRect();
+      if (r.top < h * 1.4 && r.bottom > -h * 0.4) { arm(vs[i]); vs.splice(i, 1); }
+    }
+  }
+  function tick() {
+    if (busy) return;
+    busy = true;
+    requestAnimationFrame(function () { busy = false; sweep(); });
+  }
+  window.addEventListener("scroll", tick, { passive: true });
+  window.addEventListener("resize", tick);
+  [0, 300, 1200].forEach(function (ms) { setTimeout(sweep, ms); });
+})();

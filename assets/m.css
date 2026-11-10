@@ -360,6 +360,28 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 .gi:hover img{ transform:scale(1.07) }
 .gi--w{ grid-column:span 2; aspect-ratio:2/1 }
 
+/* ----------------------------------------------------- instagram devori -- */
+/* Ustunlar bilan yig'ilgan mozaika: har bir kadr o'z nisbatini saqlaydi,
+   shuning uchun oralarida bo'sh joy qolmaydi — Instagram lentasidek. */
+.reels{ columns:4; column-gap:clamp(.55rem,1.1vw,.9rem) }
+.reels > *{
+  break-inside:avoid; margin:0 0 clamp(.55rem,1.1vw,.9rem);
+  position:relative; overflow:clip; border-radius:var(--r); background:var(--mist);
+}
+.reels img,.reels video{ width:100%; height:auto; display:block }
+.reels img{ transition:transform .9s var(--ease) }
+.reels > *:hover img{ transform:scale(1.05) }
+/* videoli kadr: burchakda kichik belgi */
+.reel--v::after{
+  content:""; position:absolute; right:.6rem; top:.6rem; width:1.4rem; height:1.4rem;
+  border-radius:50%; background:rgba(28,20,8,.55); pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M8 5v14l11-7z'/%3E%3C/svg%3E");
+  background-size:.8rem; background-repeat:no-repeat; background-position:center;
+}
+.reel--v.on::after{ opacity:0; transition:opacity .4s var(--ease) }
+@media (max-width:1000px){ .reels{ columns:3 } }
+@media (max-width:620px){ .reels{ columns:2 } }
+
 /* ------------------------------------------------------------- numbers -- */
 .facts{ display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(1rem,3vw,2.5rem) }
 .fact b{ display:block; font-family:var(--display); font-weight:400; font-size:clamp(2rem,3.4vw,3rem); color:var(--gold-deep); line-height:1 }

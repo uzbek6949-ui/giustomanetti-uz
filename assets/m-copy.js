@@ -18,6 +18,12 @@ ru:{
   "nav.home":"Главная","nav.cat":"Каталог","nav.gc":"Gold Chef","nav.acad":"Академия","nav.gal":"Галерея","nav.con":"Контакты","nav.qur":"Строительство","nav.kos":"Косметика",
   "top.l":"Официальный представитель в Узбекистане","top.r":"Пн–Пт, 9:00 до 18:00",
 
+  /* --- instagram devori --- */
+  "ig.eye":"Instagram",
+  "ig.h":"Каждый день в работе",
+  "ig.p":"Лист, кисть и рука мастера. Короткие кадры из мастерских и с объектов, где работают с золотом Manetti.",
+  "ig.cta":"@manetti_uz",
+
   /* --- qurilish / dekoratsiya --- */
   "q.eye":"Декорация и строительство",
   "q.h":"Золото<br>на зданиях",
@@ -159,6 +165,12 @@ uz:{
   "nav.home":"Bosh sahifa","nav.cat":"Katalog","nav.gc":"Gold Chef","nav.acad":"Akademiya","nav.gal":"Galereya","nav.con":"Aloqa","nav.qur":"Qurilish","nav.kos":"Kosmetika",
   "top.l":"Oʻzbekistondagi rasmiy vakil","top.r":"Dush–Jum, 9:00 dan 18:00 gacha",
 
+  /* --- instagram devori --- */
+  "ig.eye":"Instagram",
+  "ig.h":"Har kuni ish ustida",
+  "ig.p":"Varaq, moʻyqalam va usta qoʻli. Manetti oltini bilan ishlanayotgan ustaxona va obyektlardan qisqa kadrlar.",
+  "ig.cta":"@manetti_uz",
+
   /* --- qurilish / dekoratsiya --- */
   "q.eye":"Dekoratsiya va qurilish",
   "q.h":"Binolardagi<br>oltin",
@@ -293,6 +305,12 @@ en:{
 
   "nav.home":"Home","nav.cat":"Catalogue","nav.gc":"Gold Chef","nav.acad":"Academy","nav.gal":"Gallery","nav.con":"Contact","nav.qur":"Architecture","nav.kos":"Cosmetics",
   "top.l":"Official representative in Uzbekistan","top.r":"Mon to Fri, 9:00 to 18:00",
+
+  /* --- instagram devori --- */
+  "ig.eye":"Instagram",
+  "ig.h":"At work, every day",
+  "ig.p":"Leaf, brush and the gilder's hand. Short frames from the workshops and the sites where Manetti gold is at work.",
+  "ig.cta":"@manetti_uz",
 
   /* --- qurilish / dekoratsiya --- */
   "q.eye":"Decoration and architecture",
