@@ -6,18 +6,20 @@
    ========================================================================== */
 
 :root{
-  /* ---- ranglar (Franco Maria Ricci) ---- */
-  --canvas:#F6F6F6;        /* pergament, sahifa foni */
-  --paper:#FFFFFF;
-  --mist:#ECEAE6;          /* kumush yuvindi, ikkinchi fon */
-  --ink:#000000;           /* bosmaxona siyohi */
-  --ink-soft:#3C3C3C;
-  --gold:#BC9C5C;          /* sayqallangan oltin — faqat chiziq uchun */
-  --gold-deep:#9A7C41;
-  --navy:#0A0A0A;          /* galereya siyohi: qorong'i bo'limlar */
-  --navy-2:#000000;
-  --line:rgba(0,0,0,.2);
-  --line-soft:rgba(0,0,0,.09);
+  /* ---- ranglar: Franco Maria Ricci tuzilishi, iliq oltin ohangda ----
+     Sof qora va kulrang oq olib tashlandi: ular oltinni xiralashtirardi.
+     Endi hamma rang iliq tomonga tortadi va oltin jonlanadi. */
+  --canvas:#FAF6EC;        /* iliq pergament, sahifa foni */
+  --paper:#FFFCF5;
+  --mist:#F1E9D8;          /* oltinga moyil ikkinchi fon */
+  --ink:#1C1710;           /* iliq qora — sof #000 emas */
+  --ink-soft:#5C5243;
+  --gold:#C9A961;          /* sayqallangan oltin */
+  --gold-deep:#A3802F;
+  --navy:#221A0E;          /* qorong'i bo'limlar: to'q jigarrang-qora */
+  --navy-2:#17110A;
+  --line:rgba(28,23,16,.18);
+  --line-soft:rgba(28,23,16,.08);
 
   /* ---- shriftlar ---- */
   --display:"Bodoni Moda", Didot, "Bodoni 72", Georgia, serif;
@@ -36,7 +38,7 @@
   --sec:clamp(4rem,8vw,8.5rem);
   --r:0px;                 /* FMR: hamma burchak o'tkir */
   --ease:cubic-bezier(.22,.61,.36,1);
-  --shadow:0 1px 2px rgba(0,0,0,.05), 0 16px 36px -22px rgba(0,0,0,.28);
+  --shadow:0 1px 2px rgba(40,30,12,.05), 0 16px 36px -22px rgba(40,30,12,.28);
 }
 
 *,*::before,*::after{ box-sizing:border-box }
@@ -93,8 +95,8 @@ h1,h2,h3,h4{ font-family:var(--display); font-weight:400; margin:0; line-height:
 .wrap{ width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:var(--gutter) }
 .sec{ padding-block:var(--sec) }
 .sec--mist{ background:var(--mist) }
-.sec--navy{ background:var(--navy); color:#F6F6F6 }
-.sec--navy .body,.sec--navy .lede{ color:rgba(246,246,246,.72) }
+.sec--navy{ background:var(--navy); color:#F3EBD9 }
+.sec--navy .body,.sec--navy .lede{ color:rgba(250,246,236,.72) }
 .sec--tight{ padding-block:clamp(2.6rem,5vw,4.5rem) }
 
 /* ------------------------------------------------------------ buttons --- */
@@ -102,13 +104,14 @@ h1,h2,h3,h4{ font-family:var(--display); font-weight:400; margin:0; line-height:
 .btn{
   display:inline-flex; align-items:center; gap:.7rem; padding:1rem 2rem;
   font-size:.7rem; font-weight:500; letter-spacing:.2em; text-transform:uppercase;
-  border:1px solid var(--ink); color:var(--ink); border-radius:var(--r);
-  transition:background .22s var(--ease), color .22s var(--ease), transform .18s var(--ease);
+  border:1px solid var(--gold-deep); color:var(--ink); border-radius:var(--r);
+  transition:background .22s var(--ease), color .22s var(--ease), border-color .22s var(--ease), transform .18s var(--ease);
 }
-.btn:hover{ background:var(--ink); color:var(--canvas) }
+.btn:hover{ background:var(--gold); border-color:var(--gold); color:var(--ink) }
 .btn:active{ transform:translateY(1px) }
-.btn--fill{ background:var(--ink); color:var(--canvas) }
-.btn--fill:hover{ background:transparent; color:var(--ink) }
+/* Asosiy chaqiriq — oltin maydon, ustida iliq qora yozuv */
+.btn--fill{ background:var(--gold); border-color:var(--gold); color:var(--ink) }
+.btn--fill:hover{ background:var(--gold-deep); border-color:var(--gold-deep); color:#fff }
 .btn--light{ border-color:rgba(255,255,255,.55); color:#fff }
 .btn--light:hover{ background:#fff; color:var(--ink); border-color:#fff }
 .btn--dark{ border-color:var(--navy); color:var(--navy) }
@@ -126,7 +129,7 @@ h1,h2,h3,h4{ font-family:var(--display); font-weight:400; margin:0; line-height:
 
 /* ------------------------------------------------------------- header --- */
 .top{
-  background:var(--navy); color:rgba(246,246,246,.8);
+  background:var(--navy); color:rgba(250,246,236,.8);
   font-size:.7rem; letter-spacing:.1em;
 }
 .top__in{ display:flex; align-items:center; justify-content:space-between; gap:1rem; min-height:2.3rem }
@@ -152,7 +155,7 @@ h1,h2,h3,h4{ font-family:var(--display); font-weight:400; margin:0; line-height:
 }
 .lang button+button{ border-left:1px solid var(--line) }
 .lang button:hover{ color:var(--ink) }
-.lang button[aria-pressed="true"]{ background:var(--ink); color:var(--canvas) }
+.lang button[aria-pressed="true"]{ background:var(--gold); color:var(--ink) }
 
 .nav{ display:flex; justify-content:center; gap:clamp(1rem,2.6vw,2.6rem); padding-bottom:.7rem }
 .nav a{
@@ -201,7 +204,7 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
   position:absolute; inset:0; z-index:2; pointer-events:none;
   /* Bodoni ning yupqa chiziqlari yorug' rasm ustida yo'qoladi, shuning uchun
      parda avvalgisidan quyuqroq: sarlavha o'qiladigan bo'lsin. */
-  background:linear-gradient(to top, rgba(10,10,10,.88) 0%, rgba(10,10,10,.6) 38%, rgba(10,10,10,.34) 66%, rgba(10,10,10,.42) 100%);
+  background:linear-gradient(to top, rgba(28,20,8,.88) 0%, rgba(28,20,8,.6) 38%, rgba(28,20,8,.34) 66%, rgba(28,20,8,.42) 100%);
 }
 .film__in{ position:relative; z-index:3 }
 /* "Harakatni kamaytirish" yoqilganlar uchun: video o'z-o'zidan ketmaydi,
@@ -210,7 +213,7 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
   position:absolute; right:var(--gutter); top:1.2rem; z-index:4;
   display:inline-flex; align-items:center; gap:.5rem;
   padding:.6rem 1rem; border-radius:999px;
-  background:rgba(10,10,10,.62); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+  background:rgba(28,20,8,.62); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
   border:1px solid rgba(255,255,255,.3); color:#fff;
   font-size:.64rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase;
   transition:background .2s var(--ease), border-color .2s var(--ease);
@@ -234,7 +237,7 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 /* ichki sahifa sarlavhasi */
 .phero{ min-height:clamp(16rem,34vw,23rem); display:grid; align-items:end }
 .phero .film__in{ padding-block:clamp(1.8rem,5vh,3.4rem) }
-.phero h1{ color:#fff; max-width:18ch; text-shadow:0 2px 22px rgba(0,0,0,.35) }
+.phero h1{ color:#fff; max-width:18ch; text-shadow:0 2px 22px rgba(40,30,12,.38) }
 .phero .eyebrow{ color:#E9D6AC }
 
 /* Oq fonli rasm uchun yorug' sarlavha: parda chapdan oqartiradi, matn qora
@@ -244,8 +247,8 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 .phero--light .film__m--poster{ animation:none }
 .phero--light .film__veil{
   background:linear-gradient(to right,
-    rgba(246,246,246,.97) 0%, rgba(246,246,246,.92) 28%,
-    rgba(246,246,246,.42) 54%, rgba(246,246,246,0) 76%);
+    rgba(250,246,236,.97) 0%, rgba(250,246,236,.92) 28%,
+    rgba(250,246,236,.42) 54%, rgba(250,246,236,0) 76%);
 }
 .phero--light h1{ color:var(--ink); text-shadow:none }
 .phero--light .eyebrow{ color:var(--gold-deep) }
@@ -254,8 +257,8 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
   .phero--light .film__m{ object-position:center 22% }
   .phero--light .film__veil{
     background:linear-gradient(to top,
-      rgba(246,246,246,.98) 0%, rgba(246,246,246,.9) 38%,
-      rgba(246,246,246,.5) 62%, rgba(246,246,246,.1) 100%);
+      rgba(250,246,236,.98) 0%, rgba(250,246,236,.9) 38%,
+      rgba(250,246,236,.5) 62%, rgba(250,246,236,.1) 100%);
   }
 }
 
@@ -273,10 +276,10 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 .panel--gold .panel__t{ background:var(--mist); color:var(--ink); border-top:1px solid var(--gold) }
 .panel--gold .panel__t p{ color:var(--ink-soft) }
 /* Panel endi yorug': oq tugma unda ko'rinmay qoladi, qoraga aylantiramiz */
-.panel--gold .btn--light{ border-color:var(--ink); color:var(--ink) }
-.panel--gold .btn--light:hover{ background:var(--ink); color:var(--canvas) }
-.panel--navy .panel__t{ background:var(--navy); color:#F6F6F6 }
-.panel--navy .panel__t p{ color:rgba(246,246,246,.78) }
+.panel--gold .btn--light{ border-color:var(--gold-deep); color:var(--ink) }
+.panel--gold .btn--light:hover{ background:var(--gold); border-color:var(--gold); color:var(--ink) }
+.panel--navy .panel__t{ background:var(--navy); color:#F3EBD9 }
+.panel--navy .panel__t p{ color:rgba(250,246,236,.78) }
 
 /* ------------------------------------------------------------- banner --- */
 .banner{ min-height:clamp(23rem,46vw,34rem); display:grid; align-items:center }
@@ -284,7 +287,7 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 /* Shisha emas — qattiq galereya siyohi, tepasida bitta oltin chiziq.
    Xiralashtirish olib tashlandi: FMR da u yo'q va u telefonni qiynaydi. */
 .banner__card{
-  background:rgba(10,10,10,.82);
+  background:rgba(28,20,8,.82);
   border:1px solid rgba(255,255,255,.14); border-top:1px solid var(--gold); border-radius:var(--r);
   padding:clamp(1.5rem,2.6vw,2.6rem); display:flex; flex-direction:column; gap:1rem; align-items:flex-start;
 }
@@ -299,8 +302,8 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 .banner--light .film__m--poster{ animation:none }
 .banner--light .film__veil{
   background:linear-gradient(to right,
-    rgba(246,246,246,.96) 0%, rgba(246,246,246,.86) 34%,
-    rgba(246,246,246,.3) 58%, rgba(246,246,246,0) 78%);
+    rgba(250,246,236,.96) 0%, rgba(250,246,236,.86) 34%,
+    rgba(250,246,236,.3) 58%, rgba(250,246,236,0) 78%);
 }
 .banner--light .banner__card{
   background:rgba(255,255,255,.9); border-color:var(--line); box-shadow:var(--shadow);
@@ -316,14 +319,14 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
   .banner--light .film__m{ object-position:center top }
   .banner--light .film__veil{
     background:linear-gradient(to bottom,
-      rgba(246,246,246,.9) 0%, rgba(246,246,246,.55) 34%, rgba(246,246,246,0) 52%);
+      rgba(250,246,236,.9) 0%, rgba(250,246,236,.55) 34%, rgba(250,246,236,0) 52%);
   }
   .banner--light .banner__card{ background:rgba(255,255,255,.94) }
 }
 
 /* --------------------------------------------------------------- cards -- */
 .trio{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1rem,2.2vw,2rem) }
-.card{ background:var(--paper); border:1px solid var(--line-soft); border-radius:var(--r); overflow:clip;
+.card{ background:var(--paper); border:1px solid var(--line-soft); border-top:1px solid var(--gold); border-radius:var(--r); overflow:clip;
        display:flex; flex-direction:column; transition:transform .4s var(--ease), box-shadow .4s var(--ease) }
 .card:hover{ transform:translateY(-5px); box-shadow:var(--shadow) }
 /* Rasm mutlaq joylashtiriladi: aks holda u qutini cho'zib yuboradi va
@@ -359,7 +362,7 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 
 /* ------------------------------------------------------------- numbers -- */
 .facts{ display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(1rem,3vw,2.5rem) }
-.fact b{ display:block; font-family:var(--display); font-weight:400; font-size:clamp(2rem,3.4vw,3rem); color:var(--ink); line-height:1 }
+.fact b{ display:block; font-family:var(--display); font-weight:400; font-size:clamp(2rem,3.4vw,3rem); color:var(--gold-deep); line-height:1 }
 .fact span{ display:block; margin-top:.6rem; font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft) }
 
 /* icon strip */
@@ -371,7 +374,7 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 /* --------------------------------------------------------------- steps -- */
 .steps{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1.4rem,3vw,3rem); counter-reset:s }
 .step{ border-top:1px solid var(--gold); padding-top:1.4rem }
-.step b{ font-family:var(--display); font-size:2.4rem; font-weight:400; color:rgba(0,0,0,.2); line-height:1; display:block }
+.step b{ font-family:var(--display); font-size:2.4rem; font-weight:400; color:rgba(40,30,12,.2); line-height:1; display:block }
 .step h3{ font-size:1.3rem; margin:.7rem 0 .5rem }
 .step p{ margin:0; font-size:.9rem; color:var(--ink-soft); line-height:1.74 }
 
@@ -386,11 +389,11 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 }
 .f textarea{ resize:vertical; min-height:5.5rem }
 .f input:focus,.f select:focus,.f textarea:focus{
-  outline:0; border-color:var(--gold); box-shadow:0 0 0 3px rgba(188,156,92,.16);
+  outline:0; border-color:var(--gold); box-shadow:0 0 0 3px rgba(201,169,97,.16);
 }
 .f2{ display:grid; grid-template-columns:1fr 1fr; gap:1.3rem }
 .hp{ position:absolute; left:-9999px; width:1px; height:1px; opacity:0 }
-.ok{ display:none; padding:.9rem 1rem; border:1px solid var(--gold); background:rgba(188,156,92,.1);
+.ok{ display:none; padding:.9rem 1rem; border:1px solid var(--gold); background:rgba(201,169,97,.1);
      border-radius:var(--r); font-size:.9rem }
 .ok.on{ display:block }
 
@@ -404,33 +407,33 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 .map iframe{ width:100%; height:100%; border:0 }
 
 /* -------------------------------------------------------------- footer -- */
-.ftr{ background:var(--navy); color:rgba(246,246,246,.72); padding-block:clamp(3rem,6vw,5rem) 1.6rem; font-size:.86rem }
+.ftr{ background:var(--navy); color:rgba(250,246,236,.72); padding-block:clamp(3rem,6vw,5rem) 1.6rem; font-size:.86rem }
 .ftr__top{ display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:clamp(1.5rem,3vw,3rem);
-           padding-bottom:2.4rem; border-bottom:1px solid rgba(246,246,246,.14) }
+           padding-bottom:2.4rem; border-bottom:1px solid rgba(250,246,236,.14) }
 .ftr h4{ font-family:var(--text); font-size:.66rem; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); margin:0 0 1.1rem }
 .ftr ul{ list-style:none; margin:0; padding:0; display:grid; gap:.6rem }
 .ftr a:hover{ color:#fff }
-.ftr .mark b{ color:#F6F6F6 }
+.ftr .mark b{ color:#F3EBD9 }
 .ftr p{ margin:1rem 0 0; max-width:34ch; line-height:1.75 }
 .ftr__bot{ display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; padding-top:1.4rem;
-           font-size:.76rem; color:rgba(246,246,246,.5) }
+           font-size:.76rem; color:rgba(250,246,236,.5) }
 
 /* -------------------------------------------------------------- extras -- */
 .fab{
   position:fixed; right:1.1rem; bottom:1.1rem; z-index:50; display:inline-flex; align-items:center; gap:.6rem;
-  background:var(--ink); color:var(--canvas); padding:.85rem 1.2rem; border-radius:999px;
+  background:var(--gold); color:var(--ink); padding:.85rem 1.2rem; border-radius:999px;
   font-size:.66rem; font-weight:500; letter-spacing:.14em; text-transform:uppercase;
-  box-shadow:0 10px 26px -12px rgba(0,0,0,.8); transition:transform .25s var(--ease), background .25s;
+  box-shadow:0 10px 26px -12px rgba(40,30,12,.8); transition:transform .25s var(--ease), background .25s;
 }
-.fab:hover{ transform:translateY(-3px); background:var(--gold-deep) }
-.fab svg{ width:1rem; height:1rem; fill:#fff }
+.fab:hover{ transform:translateY(-3px); background:var(--gold-deep); color:#fff }
+.fab svg{ width:1rem; height:1rem; fill:currentColor }
 
-.lb{ position:fixed; inset:0; z-index:90; background:rgba(0,0,0,.94); display:none; place-items:center; padding:3.5rem 1rem }
+.lb{ position:fixed; inset:0; z-index:90; background:rgba(24,18,8,.95); display:none; place-items:center; padding:3.5rem 1rem }
 .lb.on{ display:grid }
 .lb img{ max-width:min(1050px,94vw); max-height:84vh; object-fit:contain; border-radius:var(--r) }
 .lb button{ position:absolute; width:3rem; height:3rem; display:grid; place-items:center;
             border:1px solid rgba(255,255,255,.3); border-radius:50%; color:#fff }
-.lb button:hover{ border-color:var(--gold); background:rgba(188,156,92,.2) }
+.lb button:hover{ border-color:var(--gold); background:rgba(201,169,97,.2) }
 .lb svg{ width:1.1rem; height:1.1rem; stroke:#fff; fill:none; stroke-width:1.4 }
 .lb__x{ top:1.2rem; right:1.2rem } .lb__p{ left:1rem; top:50%; transform:translateY(-50%) }
 .lb__n{ right:1rem; top:50%; transform:translateY(-50%) }
@@ -478,9 +481,9 @@ html.nojs .rv{ opacity:1; transform:none }
 @media (max-width:860px){
   .hero .film__m--poster,
   .phero .film__m--poster{ animation:none; will-change:auto }
-  .banner__card{ background:rgba(10,10,10,.78); backdrop-filter:none; -webkit-backdrop-filter:none }
+  .banner__card{ background:rgba(28,20,8,.78); backdrop-filter:none; -webkit-backdrop-filter:none }
   .banner--light .banner__card{ background:rgba(255,255,255,.95) }
-  .film__play{ backdrop-filter:none; -webkit-backdrop-filter:none; background:rgba(10,10,10,.8) }
+  .film__play{ backdrop-filter:none; -webkit-backdrop-filter:none; background:rgba(28,20,8,.8) }
 }
 
 @media (prefers-reduced-motion:reduce){
