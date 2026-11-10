@@ -199,7 +199,7 @@ function attachClip(f, manual) {
   tryPlay();
 }
 
-/* assets/video/clips.json dagi ro'yxatdagi fayllargina qo'yiladi, shuning
+/* assets/poster/clips.json dagi ro'yxatdagi fayllargina qo'yiladi, shuning
    uchun video hali yuklanmagan bo'lsa konsolda xato chiqmaydi. */
 (function () {
   var films = [].slice.call(document.querySelectorAll(".film[data-clip]"));
@@ -212,7 +212,7 @@ function attachClip(f, manual) {
     (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) ||
     !!(navigator.connection && navigator.connection.saveData);
 
-  fetch("assets/video/clips.json", { cache: "no-cache" })
+  fetch("assets/poster/clips.json", { cache: "no-cache" })
     .then(function (r) { return r.ok ? r.json() : []; })
     .then(function (list) {
       if (!Array.isArray(list) || !list.length) return;
