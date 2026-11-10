@@ -199,7 +199,9 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 @keyframes drift{ from{ transform:scale(1.04) translate3d(0,0,0) } to{ transform:scale(1.17) translate3d(-2%,-1.5%,0) } }
 .film__veil{
   position:absolute; inset:0; z-index:2; pointer-events:none;
-  background:linear-gradient(to top, rgba(10,10,10,.78) 0%, rgba(10,10,10,.32) 40%, rgba(10,10,10,.12) 70%, rgba(10,10,10,.3) 100%);
+  /* Bodoni ning yupqa chiziqlari yorug' rasm ustida yo'qoladi, shuning uchun
+     parda avvalgisidan quyuqroq: sarlavha o'qiladigan bo'lsin. */
+  background:linear-gradient(to top, rgba(10,10,10,.88) 0%, rgba(10,10,10,.6) 38%, rgba(10,10,10,.34) 66%, rgba(10,10,10,.42) 100%);
 }
 .film__in{ position:relative; z-index:3 }
 /* "Harakatni kamaytirish" yoqilganlar uchun: video o'z-o'zidan ketmaydi,
@@ -270,6 +272,9 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 /* Oltin maydon emas: ochiq panel kumush yuvindi fonda, tepasida oltin chiziq */
 .panel--gold .panel__t{ background:var(--mist); color:var(--ink); border-top:1px solid var(--gold) }
 .panel--gold .panel__t p{ color:var(--ink-soft) }
+/* Panel endi yorug': oq tugma unda ko'rinmay qoladi, qoraga aylantiramiz */
+.panel--gold .btn--light{ border-color:var(--ink); color:var(--ink) }
+.panel--gold .btn--light:hover{ background:var(--ink); color:var(--canvas) }
 .panel--navy .panel__t{ background:var(--navy); color:#F6F6F6 }
 .panel--navy .panel__t p{ color:rgba(246,246,246,.78) }
 
