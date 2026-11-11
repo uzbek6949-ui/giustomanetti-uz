@@ -390,3 +390,76 @@ checkRv();
   window.addEventListener("resize", tick);
   [0, 300, 1200].forEach(function (ms) { setTimeout(sweep, ms); });
 })();
+
+/* ===================================================== 7. harakatlar ======
+   "Yaxshi dasturchi" hissi: hero ketma-ket ko'tariladi, raqamlar sanaladi,
+   bannerlarda yengil parallaks. Hammasi "harakatni kamaytirish"da o'chadi. */
+(function () {
+  var reduce =
+    (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+
+  /* --- hero / ichki sarlavha kirishi --- */
+  function ready() {
+    var hs = document.querySelectorAll(".hero, .phero");
+    for (var i = 0; i < hs.length; i++) hs[i].classList.add("ready");
+  }
+  if (reduce) { ready(); return; }
+  requestAnimationFrame(function () { requestAnimationFrame(ready); });
+
+  /* --- raqamlar sanaladi: "400+", "15", "70+", "29" --- */
+  var facts = document.querySelector(".facts");
+  var counted = false;
+  function easeOutCubic(p) { return 1 - Math.pow(1 - p, 3); }
+  function runCount() {
+    if (counted || !facts) return;
+    var vh = window.innerHeight || 800;
+    var r = facts.getBoundingClientRect();
+    if (r.top > vh * 0.9 || r.bottom < 0) return;
+    counted = true;
+    var bs = facts.querySelectorAll(".fact b");
+    for (var i = 0; i < bs.length; i++) (function (el) {
+      var raw = el.textContent.trim();
+      var m = raw.match(/\d[\d\s]*/);
+      if (!m) return;
+      var digits = m[0].replace(/\s/g, "");
+      var target = parseInt(digits, 10);
+      var pre = raw.slice(0, m.index);
+      var suf = raw.slice(m.index + m[0].length);
+      var dur = 1300, t0 = 0;
+      function step(t) {
+        if (!t0) t0 = t;
+        var p = Math.min((t - t0) / dur, 1);
+        el.textContent = pre + Math.round(target * easeOutCubic(p)) + suf;
+        if (p < 1) requestAnimationFrame(step); else el.textContent = raw;
+      }
+      requestAnimationFrame(step);
+    })(bs[i]);
+  }
+  window.addEventListener("scroll", runCount, { passive: true });
+  window.addEventListener("resize", runCount);
+  [0, 300, 900, 1600].forEach(function (ms) { setTimeout(runCount, ms); });
+
+  /* --- yengil parallaks: bannerlardagi poster sekin suriladi ---
+     Faqat keng ekran; mobil, yorug' banner va tejamkor rejim chetda. */
+  var small = window.matchMedia && window.matchMedia("(max-width: 860px)").matches;
+  var posters = small ? []
+    : [].slice.call(document.querySelectorAll(".banner:not(.banner--light) .film__m--poster"));
+  for (var k = 0; k < posters.length; k++) posters[k].style.willChange = "transform";
+  var ticking = false;
+  function parallax() {
+    var vh = window.innerHeight || 800;
+    for (var i = 0; i < posters.length; i++) {
+      var box = posters[i].getBoundingClientRect();
+      var off = (box.top + box.height / 2 - vh / 2) / vh;      /* -0.5..0.5 */
+      var shift = Math.max(-26, Math.min(26, off * -44));
+      posters[i].style.transform = "translate3d(0," + shift.toFixed(1) + "px,0) scale(1.12)";
+    }
+    ticking = false;
+  }
+  function onPx() { if (!ticking) { ticking = true; requestAnimationFrame(parallax); } }
+  if (posters.length) {
+    window.addEventListener("scroll", onPx, { passive: true });
+    window.addEventListener("resize", onPx);
+    parallax();
+  }
+})();

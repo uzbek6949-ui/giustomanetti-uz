@@ -384,7 +384,7 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 
 /* ------------------------------------------------------------- numbers -- */
 .facts{ display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(1rem,3vw,2.5rem) }
-.fact b{ display:block; font-family:var(--display); font-weight:400; font-size:clamp(2rem,3.4vw,3rem); color:var(--gold-deep); line-height:1 }
+.fact b{ display:block; font-family:var(--display); font-weight:400; font-size:clamp(2rem,3.4vw,3rem); color:var(--gold-deep); line-height:1; font-variant-numeric:tabular-nums }
 .fact span{ display:block; margin-top:.6rem; font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft) }
 
 /* icon strip */
@@ -468,10 +468,30 @@ body.menu .drawer{ opacity:1; visibility:visible; transform:none }
 .lb__n{ right:1rem; top:50%; transform:translateY(-50%) }
 
 /* reveal */
-.rv{ opacity:0; transform:translateY(18px); transition:opacity .8s var(--ease), transform .8s var(--ease) }
-.rv.in{ opacity:1; transform:none }
-.d-1{ transition-delay:.08s } .d-2{ transition-delay:.16s } .d-3{ transition-delay:.24s } .d-4{ transition-delay:.32s }
-html.nojs .rv{ opacity:1; transform:none }
+/* Ko'rinish: element skringa kirganda yumshoq ko'tariladi, blur tarqaydi.
+   Blur — "qo'l bilan ishlangan" hissi beradi, lekin faqat kirish paytida. */
+.rv{ opacity:0; transform:translateY(26px); filter:blur(7px);
+     transition:opacity .9s var(--ease), transform .95s var(--ease), filter .9s var(--ease) }
+.rv.in{ opacity:1; transform:none; filter:blur(0) }
+.d-1{ transition-delay:.09s } .d-2{ transition-delay:.18s } .d-3{ transition-delay:.27s } .d-4{ transition-delay:.36s }
+html.nojs .rv{ opacity:1; transform:none; filter:none }
+
+/* Sarlavha ostidagi oltin chiziq chiziladi (eni 0 dan ochiladi) */
+.flour{ width:0; transition:width 1s .25s var(--ease) }
+.rv.in .flour,.flour.rv.in{ width:7rem }
+.center .flour,.center .rv.in .flour{ margin-inline:auto }
+html.nojs .flour{ width:7rem; transition:none }
+
+/* Hero va ichki sarlavha: sahifa ochilganda qatorlar ketma-ket ko'tariladi */
+.hero .film__in > *, .phero .film__in > *{
+  opacity:0; transform:translateY(24px);
+  transition:opacity .9s var(--ease), transform 1s var(--ease) }
+.hero.ready .film__in > *, .phero.ready .film__in > *{ opacity:1; transform:none }
+.hero.ready .film__in > :nth-child(1),.phero.ready .film__in > :nth-child(1){ transition-delay:.12s }
+.hero.ready .film__in > :nth-child(2),.phero.ready .film__in > :nth-child(2){ transition-delay:.28s }
+.hero.ready .film__in > :nth-child(3),.phero.ready .film__in > :nth-child(3){ transition-delay:.44s }
+.hero.ready .film__in > :nth-child(4){ transition-delay:.58s }
+html.nojs .hero .film__in > *,html.nojs .phero .film__in > *{ opacity:1; transform:none }
 
 /* ===================================================== responsive ======== */
 /* Each panel needs the full width before its text column gets cramped. */
@@ -517,6 +537,8 @@ html.nojs .rv{ opacity:1; transform:none }
 
 @media (prefers-reduced-motion:reduce){
   *{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important }
-  .rv{ opacity:1; transform:none }
+  .rv{ opacity:1; transform:none; filter:none }
+  .flour{ width:7rem }
+  .hero .film__in > *,.phero .film__in > *{ opacity:1; transform:none }
   .film__m--poster{ animation:none }
 }
