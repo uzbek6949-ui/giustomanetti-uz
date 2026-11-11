@@ -137,7 +137,7 @@ ru:{
 
   "f.name":"Имя","f.tel":"Телефон","f.int":"Интересует","f.msg":"Сообщение","f.send":"Отправить",
   "f.phname":"Ваше имя","f.phtel":"+998 __ ___ __ __",
-  "f.o1":"Съедобное золото (Gold Chef)","f.o2":"Съедобное серебро",
+  "f.o1":"Съедобное золото","f.o2":"Съедобное серебро",
   "f.o3":"Сусальное золото для золочения","f.o4":"Опт / HoReCa",
   "f.note":"Или напишите в Telegram: <a href=\"https://t.me/manettiuz\" target=\"_blank\" rel=\"noopener\">@manettiuz</a>",
   "f.err":"Заполните имя и телефон.",
@@ -278,7 +278,7 @@ uz:{
 
   "f.name":"Ism","f.tel":"Telefon","f.int":"Qiziqish","f.msg":"Xabar","f.send":"Yuborish",
   "f.phname":"Ismingizni kiriting","f.phtel":"+998 __ ___ __ __",
-  "f.o1":"Yeyiladigan oltin (Gold Chef)","f.o2":"Yeyiladigan kumush",
+  "f.o1":"Yeyiladigan oltin","f.o2":"Yeyiladigan kumush",
   "f.o3":"Zarhallash uchun varaq oltin","f.o4":"Ulgurji / HoReCa",
   "f.note":"Yoki Telegramda yozing: <a href=\"https://t.me/manettiuz\" target=\"_blank\" rel=\"noopener\">@manettiuz</a>",
   "f.err":"Ism va telefon raqamini toʻldiring.",
@@ -419,7 +419,7 @@ en:{
 
   "f.name":"Name","f.tel":"Phone","f.int":"Interested in","f.msg":"Message","f.send":"Send",
   "f.phname":"Your name","f.phtel":"+998 __ ___ __ __",
-  "f.o1":"Edible gold (Gold Chef)","f.o2":"Edible silver",
+  "f.o1":"Edible gold","f.o2":"Edible silver",
   "f.o3":"Gold leaf for gilding","f.o4":"Wholesale / HoReCa",
   "f.note":"Or message us on Telegram: <a href=\"https://t.me/manettiuz\" target=\"_blank\" rel=\"noopener\">@manettiuz</a>",
   "f.err":"Please fill in your name and phone number.",
