@@ -463,3 +463,21 @@ checkRv();
     parallax();
   }
 })();
+
+/* ---------------------------------------------- 8. instagram lentasi -----
+   Kartalar uzluksiz o'ngdan chapga suriladi. Harakat kamaytirilgan yoki JS
+   yo'q bo'lsa — qo'lda suriladigan qoladi (CSS standart holati). */
+(function () {
+  var mq = document.querySelector(".mq");
+  if (!mq) return;
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var track = mq.querySelector(".mq__track");
+  if (!track) return;
+  [].slice.call(track.children).forEach(function (c) {
+    var clone = c.cloneNode(true);
+    clone.setAttribute("aria-hidden", "true");
+    clone.tabIndex = -1;
+    track.appendChild(clone);
+  });
+  mq.classList.add("mq--run");
+})();
