@@ -12,11 +12,20 @@ ru:{
   "t.ac":"Gilding Academy · школа золочения · Manetti",
   "t.gal":"Галерея · Giusto Manetti Battiloro",
   "t.con":"Контакты · Giusto Manetti Battiloro Узбекистан",
+  "t.prod":"Продукция · съедобное золото и серебро · Giusto Manetti Battiloro",
   "t.qur":"Золочение в строительстве и декоре · Giusto Manetti Battiloro",
   "t.kos":"Косметическое золото 24K · Giusto Manetti Battiloro",
 
-  "nav.home":"Главная","nav.cat":"Каталог","nav.gc":"Gold Chef","nav.acad":"Академия","nav.gal":"Галерея","nav.con":"Контакты","nav.qur":"Строительство","nav.kos":"Косметика",
+  "nav.home":"Главная","nav.cat":"Каталог","nav.gc":"Gold Chef","nav.acad":"Академия","nav.gal":"Галерея","nav.con":"Контакты","nav.prod":"Продукция","nav.qur":"Строительство","nav.kos":"Косметика",
   "top.l":"Официальный представитель в Узбекистане","top.r":"Пн–Пт, 9:00 до 18:00",
+
+  /* --- mahsulotlar --- */
+  "pr.eye":"Пищевое золото и серебро","pr.h":"Продукция",
+  "pr.p":"Съедобное золото и серебро 24K Giusto Manetti Battiloro: лист, хлопья, крошка и пудра в сериях от профессиональной кухни до подарочного формата. Без вкуса и запаха, сертифицировано как краситель E175 (золото) и E174 (серебро).",
+  "pr.note":"Цены — по запросу. Напишите, какие позиции и объём нужны, и мы подготовим предложение.",
+  "pr.gold":"Пищевое золото","pr.silver":"Пищевое серебро",
+  "pr.ask":"Нужны съедобное золото или серебро для ресторана, кондитерской или бара? Напишите — подберём серию и формат, назовём цену.",
+  "pf.flakes":"Хлопья","pf.crumbs":"Крошка","pf.powder":"Порошок","pf.leaf":"Листовое","pf.transfer":"Трансферный лист",
 
   /* --- instagram devori --- */
   "ig.eye":"Instagram",
@@ -159,11 +168,20 @@ uz:{
   "t.ac":"Gilding Academy · zarhallash maktabi · Manetti",
   "t.gal":"Galereya · Giusto Manetti Battiloro",
   "t.con":"Aloqa · Giusto Manetti Battiloro Oʻzbekiston",
+  "t.prod":"Mahsulotlar · yeyiladigan oltin va kumush · Giusto Manetti Battiloro",
   "t.qur":"Qurilish va dekorda zarhallash · Giusto Manetti Battiloro",
   "t.kos":"Kosmetik oltin 24K · Giusto Manetti Battiloro",
 
-  "nav.home":"Bosh sahifa","nav.cat":"Katalog","nav.gc":"Gold Chef","nav.acad":"Akademiya","nav.gal":"Galereya","nav.con":"Aloqa","nav.qur":"Qurilish","nav.kos":"Kosmetika",
+  "nav.home":"Bosh sahifa","nav.cat":"Katalog","nav.gc":"Gold Chef","nav.acad":"Akademiya","nav.gal":"Galereya","nav.con":"Aloqa","nav.prod":"Mahsulotlar","nav.qur":"Qurilish","nav.kos":"Kosmetika",
   "top.l":"Oʻzbekistondagi rasmiy vakil","top.r":"Dush–Jum, 9:00 dan 18:00 gacha",
+
+  /* --- mahsulotlar --- */
+  "pr.eye":"Yeyiladigan oltin va kumush","pr.h":"Mahsulotlar",
+  "pr.p":"Giusto Manetti Battiloro 24K yeyiladigan oltin va kumush: varaq, parcha, kukuncha va kukun — professional oshxonadan sovgʻabop formatgacha turli seriyalarda. Taʼmi va hidi yoʻq, E175 (oltin) va E174 (kumush) boʻyoq sifatida sertifikatlangan.",
+  "pr.note":"Narxlar — soʻrov boʻyicha. Qaysi mahsulot va qancha hajm kerakligini yozing, taklif tayyorlaymiz.",
+  "pr.gold":"Yeyiladigan oltin","pr.silver":"Yeyiladigan kumush",
+  "pr.ask":"Restoran, qandolatxona yoki bar uchun yeyiladigan oltin yoki kumush kerakmi? Yozing — seriya va formatni tanlab, narxini aytamiz.",
+  "pf.flakes":"Parcha","pf.crumbs":"Kukuncha","pf.powder":"Kukun","pf.leaf":"Varaq","pf.transfer":"Transfer varaq",
 
   /* --- instagram devori --- */
   "ig.eye":"Instagram",
@@ -300,11 +318,20 @@ en:{
   "t.ac":"Gilding Academy · Manetti",
   "t.gal":"Gallery · Giusto Manetti Battiloro",
   "t.con":"Contact · Giusto Manetti Battiloro Uzbekistan",
+  "t.prod":"Products · edible gold and silver · Giusto Manetti Battiloro",
   "t.qur":"Gilding for architecture and decoration · Giusto Manetti Battiloro",
   "t.kos":"Cosmetic gold 24K · Giusto Manetti Battiloro",
 
-  "nav.home":"Home","nav.cat":"Catalogue","nav.gc":"Gold Chef","nav.acad":"Academy","nav.gal":"Gallery","nav.con":"Contact","nav.qur":"Architecture","nav.kos":"Cosmetics",
+  "nav.home":"Home","nav.cat":"Catalogue","nav.gc":"Gold Chef","nav.acad":"Academy","nav.gal":"Gallery","nav.con":"Contact","nav.prod":"Products","nav.qur":"Architecture","nav.kos":"Cosmetics",
   "top.l":"Official representative in Uzbekistan","top.r":"Mon to Fri, 9:00 to 18:00",
+
+  /* --- mahsulotlar --- */
+  "pr.eye":"Edible gold and silver","pr.h":"Products",
+  "pr.p":"Giusto Manetti Battiloro 24K edible gold and silver: leaf, flakes, crumbs and powder, in series from the professional kitchen to gift formats. Tasteless and odourless, certified as colouring E175 (gold) and E174 (silver).",
+  "pr.note":"Prices on request. Tell us which items and what quantity you need, and we will prepare an offer.",
+  "pr.gold":"Edible gold","pr.silver":"Edible silver",
+  "pr.ask":"Need edible gold or silver for a restaurant, patisserie or bar? Write to us — we will match the series and format and name a price.",
+  "pf.flakes":"Flakes","pf.crumbs":"Crumbs","pf.powder":"Powder","pf.leaf":"Leaf","pf.transfer":"Transfer leaf",
 
   /* --- instagram devori --- */
   "ig.eye":"Instagram",
