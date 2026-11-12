@@ -5,9 +5,14 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
+import { buildProducts } from './gen-products.mjs';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const src = (f) => readFile(join(ROOT, 'src', f), 'utf8');
+
+/* Mahsulotlar sahifasini avval ma'lumotdan (assets/products.json) yangilaymiz */
+const pr = await buildProducts();
+console.log('  mahsulotlar: ' + pr.total + ' karta (' + pr.gold + ' oltin + ' + pr.silver + ' kumush)');
 
 const PAGES = [
   { file: 'index.html',    tkey: 't.index',
