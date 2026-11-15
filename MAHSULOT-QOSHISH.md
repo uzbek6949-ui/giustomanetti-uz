@@ -70,3 +70,7 @@ keyin push. Rasm fayllarini ham o'chirsangiz bo'ladi (`assets/img/shop/<id>.*`).
 Kartadagi shakl (Хлопья/Крошка/…) uchta tilda ko'rsatiladi. Tarjimalar
 `assets/m-copy.js` da `pf.flakes`, `pf.crumbs`, `pf.powder`, `pf.leaf`,
 `pf.transfer` kalitlarida. Yangi shakl turi kerak bo'lsa, shu yerga qo'shiladi.
+
+## Batafsil sahifalari
+
+`node build.mjs` har bir mahsulot uchun `mahsulot/<id>.html` sahifasini o'zi yasaydi (rasm, xususiyatlar, "Narxini bilish" tugmasi, o'xshash mahsulotlar). Qo'lda hech narsa qilish shart emas.

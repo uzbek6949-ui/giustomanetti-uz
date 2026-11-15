@@ -6,8 +6,21 @@
   "weight": "10 г",
   "series": "Industrial",
   "title": "Пищевое серебро Giusto Manetti Battiloro 10 гр. в хлопьях, серия «Industrial»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_flakes_10.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_flakes_10-300x300.jpg"
+  "desc": [
+   "d0"
+  ],
+  "feats": [
+   "d1",
+   "d2"
+  ],
+  "size": "Средний диаметр частицы фракции 30 мм.",
+  "pack": "Пакеты, высота 23 см, ширина 25 см",
+  "sku": "2KOBS10",
+  "gallery": [
+   "820",
+   "815",
+   "694"
+  ]
  },
  {
   "id": "690",
@@ -16,8 +29,22 @@
   "weight": "3 г",
   "series": "Gold Chef",
   "title": "Пищевое серебро Giusto Manetti Battiloro 3 гр. в хлопьях, серия «Gold Chef»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_-gold-chef_flakes_3.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_-gold-chef_flakes_3-300x300.jpg"
+  "desc": [
+   "d3"
+  ],
+  "feats": [
+   "d4",
+   "d5"
+  ],
+  "size": "Средний диаметр частицы фракции 30 мм.",
+  "pack": "Стеклянная ёмкость, высота 200 мм, диаметр 80 мм",
+  "sku": "2POBR004",
+  "gallery": [
+   "691",
+   "626",
+   "667",
+   "664"
+  ]
  },
  {
   "id": "688",
@@ -26,8 +53,20 @@
   "weight": "3 г",
   "series": "Gold Chef",
   "title": "Пищевое серебро Giusto Manetti Battiloro 3 гр. в крошке, серия «Gold Chef»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_-gold-chef_crumbs_3.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_-gold-chef_crumbs_3-300x300.jpg"
+  "desc": [
+   "d6"
+  ],
+  "feats": [
+   "d7",
+   "d8"
+  ],
+  "size": "Средний диаметр частицы фракции 4 мм.",
+  "pack": "Стеклянная солонка, высота 122 мм, диаметр 74 мм",
+  "gallery": [
+   "689",
+   "649",
+   "635"
+  ]
  },
  {
   "id": "682",
@@ -36,8 +75,21 @@
   "weight": "3 г",
   "series": "Gold Chef",
   "title": "Пищевое серебро Giusto Manetti Battiloro 3 гр. в порошке, серия «Gold Chef»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/8_edible-silver_sheets_25-4.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/8_edible-silver_sheets_25-4-300x300.jpg"
+  "desc": [
+   "d6"
+  ],
+  "feats": [
+   "d7",
+   "d8"
+  ],
+  "size": "Средний диаметр частицы фракции 1 мм.",
+  "pack": "Стеклянная солонка, высота 122 мм, диаметр 74 мм",
+  "gallery": [
+   "683",
+   "645",
+   "664",
+   "632"
+  ]
  },
  {
   "id": "673",
@@ -46,8 +98,21 @@
   "weight": "1 г",
   "series": "Gold Chef",
   "title": "Пищевое серебро Giusto Manetti Battiloro 1 гр. в хлопьях, серия «Gold Chef»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_-gold-chef_flakes_1.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_-gold-chef_flakes_1-300x300.jpg"
+  "desc": [
+   "d6"
+  ],
+  "feats": [
+   "d7",
+   "d8"
+  ],
+  "size": "Средний диаметр частицы фракции 30 мм.",
+  "pack": "Стеклянная ёмкость, высота 66 мм, диаметр 74 мм",
+  "gallery": [
+   "674",
+   "667",
+   "660",
+   "626"
+  ]
  },
  {
   "id": "671",
@@ -56,8 +121,20 @@
   "weight": "1 г",
   "series": "Gold Chef",
   "title": "Пищевое серебро Giusto Manetti Battiloro 1 гр. в крошке, серия «Gold Chef»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_-gold-chef_powder_1-1.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_-gold-chef_powder_1-1-300x300.jpg"
+  "desc": [
+   "d6"
+  ],
+  "feats": [
+   "d7",
+   "d8"
+  ],
+  "size": "Средний диаметр частицы фракции 4 мм.",
+  "pack": "Стеклянная солонка, высота 75 мм, диаметр 34 мм",
+  "gallery": [
+   "672",
+   "663",
+   "649"
+  ]
  },
  {
   "id": "669",
@@ -66,8 +143,20 @@
   "weight": "1 г",
   "series": "Gold Chef",
   "title": "Пищевое серебро Giusto Manetti Battiloro 1 гр. в порошке, серия «Gold Chef»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_-gold-chef_powder_1.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_-gold-chef_powder_1-300x300.jpg"
+  "desc": [
+   "d6"
+  ],
+  "feats": [
+   "d7",
+   "d8"
+  ],
+  "size": "Средний диаметр частицы фракции 1 мм.",
+  "pack": "Стеклянная солонка, высота 66 мм, диаметр 74 мм",
+  "gallery": [
+   "670",
+   "645",
+   "664"
+  ]
  },
  {
   "id": "665",
@@ -76,8 +165,21 @@
   "weight": "0,2 г",
   "series": "Gold Chef",
   "title": "Пищевое серебро Giusto Manetti Battiloro 0,2 гр. в хлопьях, серия «Gold Chef»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_flakes_0125.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_flakes_0125-300x300.jpg"
+  "desc": [
+   "d3"
+  ],
+  "feats": [
+   "d4",
+   "d5"
+  ],
+  "size": "Средний диаметр частицы фракции 30 мм.",
+  "pack": "Стеклянная ёмкость, высота 66 мм, диаметр 74 мм",
+  "gallery": [
+   "666",
+   "626",
+   "667",
+   "664"
+  ]
  },
  {
   "id": "661",
@@ -86,8 +188,20 @@
   "weight": "0,2 г",
   "series": "Gold Chef",
   "title": "Пищевое серебро Giusto Manetti Battiloro 0,2 гр. в крошке, серия «Gold Chef»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/8_edible-silver_sheets_25-3.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/8_edible-silver_sheets_25-3-300x300.jpg"
+  "desc": [
+   "d6"
+  ],
+  "feats": [
+   "d7",
+   "d8"
+  ],
+  "size": "Средний диаметр частицы фракции 4 мм.",
+  "pack": "Стеклянная солонка, высота 75 мм, диаметр 34 мм",
+  "gallery": [
+   "664",
+   "663",
+   "649"
+  ]
  },
  {
   "id": "658",
@@ -96,8 +210,20 @@
   "weight": "0,2 г",
   "series": "Gold Chef",
   "title": "Пищевое серебро Giusto Manetti Battiloro 0,2 гр. в порошке, серия «Gold Chef»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/8_edible-silver_sheets_25-1.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/8_edible-silver_sheets_25-1-300x300.jpg"
+  "desc": [
+   "d6"
+  ],
+  "feats": [
+   "d7",
+   "d8"
+  ],
+  "size": "Средний диаметр частицы фракции 1 мм.",
+  "pack": "Стеклянная солонка, высота 75 мм, диаметр 34 мм",
+  "gallery": [
+   "660",
+   "659",
+   "645"
+  ]
  },
  {
   "id": "644",
@@ -106,8 +232,21 @@
   "weight": "0,2 г",
   "series": "LUXURY",
   "title": "Пищевое cеребро Giusto Manetti Battiloro 0,2 гр. в порошке, серия «LUXURY»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_powder_020.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/1_edible-silver_powder_020-300x300.jpg"
+  "desc": [
+   "d6"
+  ],
+  "feats": [
+   "d9",
+   "d7",
+   "d8"
+  ],
+  "size": "Средний диаметр частицы фракции 1 мм.",
+  "pack": "Стеклянная солонка, высота 75 мм, диаметр 34 мм",
+  "gallery": [
+   "646",
+   "632",
+   "645"
+  ]
  },
  {
   "id": "640",
@@ -116,8 +255,20 @@
   "weight": "5 лист.",
   "series": "Gold Chef You & Me",
   "title": "Пищевое серебро листовое Giusto Manetti Battiloro в книжках, 5 листов, серия GOLD CHEF “YOU&ME”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/youandme_fiocchiargento_70mg_goldchef-—-kopiya.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/youandme_fiocchiargento_70mg_goldchef-—-kopiya-300x300.jpg"
+  "desc": [
+   "d10"
+  ],
+  "feats": [
+   "d11",
+   "d8"
+  ],
+  "size": "Размер листа: 50 х 50 мм",
+  "pack": "1 книжка",
+  "gallery": [
+   "629",
+   "627",
+   "628"
+  ]
  },
  {
   "id": "638",
@@ -126,8 +277,21 @@
   "weight": "0,125 г",
   "series": "Gold Chef Family & Friends",
   "title": "Пищевое серебро Giusto Manetti Battiloro 0,125 гр. в хлопьях, серия GOLD CHEF “FAMILY&FRIENDS”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_fiocchiargento_125mg_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_fiocchiargento_125mg_goldchef-300x300.jpg"
+  "desc": [
+   "d6"
+  ],
+  "feats": [
+   "d12",
+   "d7",
+   "d13"
+  ],
+  "size": "Средний диаметр частицы серебра 30 мм.",
+  "pack": "Пакет, высота 11,5 см, ширина 10 см",
+  "gallery": [
+   "639",
+   "623",
+   "620"
+  ]
  },
  {
   "id": "633",
@@ -136,8 +300,22 @@
   "weight": "0,125 г",
   "series": "Gold Chef Family & Friends",
   "title": "Пищевое серебро Giusto Manetti Battiloro 0,125 гр. в крошке, серия GOLD CHEF “FAMILY&FRIENDS”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_bricioleargento_125mg_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_bricioleargento_125mg_goldchef-300x300.jpg"
+  "desc": [
+   "d6"
+  ],
+  "feats": [
+   "d12",
+   "d7",
+   "d13"
+  ],
+  "size": "Средний диаметр частицы фракции 4 мм.",
+  "pack": "Стеклянная солонка, высота 75 мм, диаметр 34 мм",
+  "gallery": [
+   "634",
+   "635",
+   "636",
+   "616"
+  ]
  },
  {
   "id": "625",
@@ -146,8 +324,20 @@
   "weight": "0,125 г",
   "series": "Gold Chef Family & Friends",
   "title": "Пищевое серебро Giusto Manetti Battiloro 0,125 гр. в порошке, серия GOLD CHEF “FAMILY&FRIENDS”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_polvereargento_125mg_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_polvereargento_125mg_goldchef-300x300.jpg"
+  "desc": [
+   "d10"
+  ],
+  "feats": [
+   "d8"
+  ],
+  "size": "Средний диаметр частицы фракции 1 мм.",
+  "pack": "Стеклянная солонка, высота 75 мм, диаметр 34 мм",
+  "gallery": [
+   "631",
+   "610",
+   "611",
+   "632"
+  ]
  },
  {
   "id": "619",
@@ -156,8 +346,21 @@
   "weight": "0,07 г",
   "series": "Gold Chef You & Me",
   "title": "Пищевое серебро Giusto Manetti Battiloro 0,07 гр. в хлопьях, серия GOLD CHEF “YOU&ME”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/youandme_fiocchiargento_70mg_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/youandme_fiocchiargento_70mg_goldchef-300x300.jpg"
+  "desc": [
+   "d6"
+  ],
+  "feats": [
+   "d12",
+   "d7",
+   "d13"
+  ],
+  "size": "Средний диаметр частицы серебра 30 мм.",
+  "pack": "Пакет, высота 11,5 см, ширина 10 см",
+  "gallery": [
+   "622",
+   "623",
+   "620"
+  ]
  },
  {
   "id": "614",
@@ -166,8 +369,21 @@
   "weight": "0,07 г",
   "series": "Gold Chef You & Me",
   "title": "Пищевое серебро Giusto Manetti Battiloro 0,07 гр. в крошке, серия GOLD CHEF “YOU&ME”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/youandme_bricioleargento_70mg_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/youandme_bricioleargento_70mg_goldchef-300x300.jpg"
+  "desc": [
+   "d6"
+  ],
+  "feats": [
+   "d12",
+   "d7",
+   "d13"
+  ],
+  "size": "Средний диаметр частицы серебра 4 мм.",
+  "pack": "Пакет, высота 11,5 см, ширина 10 см",
+  "gallery": [
+   "617",
+   "616",
+   "615"
+  ]
  },
  {
   "id": "608",
@@ -176,8 +392,22 @@
   "weight": "0,07 г",
   "series": "Gold Chef You & Me",
   "title": "Пищевое серебро Giusto Manetti Battiloro 0,07 гр. в порошке, серия GOLD CHEF “YOU&ME”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/youandme_polvereargento_70mg_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/youandme_polvereargento_70mg_goldchef-300x300.jpg"
+  "desc": [
+   "d6"
+  ],
+  "feats": [
+   "d12",
+   "d7",
+   "d13"
+  ],
+  "size": "Средний диаметр частицы серебра 1 мм.",
+  "pack": "Пакет, высота 11,5 см, ширина 10 см",
+  "gallery": [
+   "609",
+   "610",
+   "611",
+   "612"
+  ]
  },
  {
   "id": "589",
@@ -186,8 +416,20 @@
   "weight": "10 г",
   "series": "INDUSTRIAL",
   "title": "Пищевое золото Giusto Manetti Battiloro 10 гр. в хлопьях. Серия «INDUSTRIAL»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/3_edible-gold_flakes_10.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/3_edible-gold_flakes_10-300x300.jpg"
+  "desc": [
+   "d14"
+  ],
+  "feats": [
+   "d1",
+   "d2"
+  ],
+  "size": "Средний диаметр частицы фракции 30 мм.",
+  "pack": "Пакеты, высота 23 см, ширина 25 см",
+  "gallery": [
+   "591",
+   "590",
+   "592"
+  ]
  },
  {
   "id": "585",
@@ -196,8 +438,23 @@
   "weight": "3 г",
   "series": "BUSINESS",
   "title": "Пищевое золото Giusto Manetti Battiloro 3 гр. в хлопьях. Серия «BUSINESS»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/9_edible-gold_flakes_3.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/9_edible-gold_flakes_3-300x300.jpg"
+  "desc": [
+   "d15"
+  ],
+  "feats": [
+   "d16",
+   "d17",
+   "d18",
+   "d19"
+  ],
+  "size": "Средний диаметр частицы золота 30 мм.",
+  "pack": "Стеклянная емкость, высота 122 мм, диаметр 74 мм",
+  "gallery": [
+   "586",
+   "587",
+   "588",
+   "549"
+  ]
  },
  {
   "id": "583",
@@ -206,8 +463,21 @@
   "weight": "3 г",
   "series": "BUSINESS",
   "title": "Пищевое золото Giusto Manetti Battiloro 3 гр. в крошке. Серия «BUSINESS»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/goldchef_orobriciole_10.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/goldchef_orobriciole_10-300x300.jpg"
+  "desc": [],
+  "feats": [
+   "d15",
+   "d16",
+   "d17",
+   "d18"
+  ],
+  "size": "Средний диаметр частицы золота 4 мм.",
+  "pack": "Стеклянная солонка, высота 122 мм, диаметр 74 мм",
+  "gallery": [
+   "504",
+   "584",
+   "552",
+   "540"
+  ]
  },
  {
   "id": "580",
@@ -216,8 +486,21 @@
   "weight": "3 г",
   "series": "BUSINESS",
   "title": "Пищевое золото Giusto Manetti Battiloro 3 гр. в порошке. Серия «BUSINESS»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/4_edible-gold_powder_02.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/4_edible-gold_powder_02-300x300.jpg"
+  "desc": [],
+  "feats": [
+   "d15",
+   "d16",
+   "d17",
+   "d18"
+  ],
+  "size": "Средний диаметр частицы золота 1 мм.",
+  "pack": "Стеклянная солонка, высота 66 мм, диаметр 74 мм",
+  "gallery": [
+   "554",
+   "581",
+   "540",
+   "582"
+  ]
  },
  {
   "id": "576",
@@ -226,8 +509,21 @@
   "weight": "1 г",
   "series": "BUSINESS",
   "title": "Пищевое золото Giusto Manetti Battiloro 1 гр. в крошке. Серия «BUSINESS»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/goldchef_orobriciole_3.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/goldchef_orobriciole_3-300x300.jpg"
+  "desc": [],
+  "feats": [
+   "d15",
+   "d20",
+   "d21",
+   "d22"
+  ],
+  "size": "Средний диаметр частицы золота 4 мм.",
+  "pack": "Стеклянная солонка, высота 66 мм, диаметр 74 мм",
+  "gallery": [
+   "502",
+   "564",
+   "577",
+   "578"
+  ]
  },
  {
   "id": "574",
@@ -236,8 +532,18 @@
   "weight": "1 г",
   "series": "BUSINESS",
   "title": "Пищевое золото Giusto Manetti Battiloro 1 гр. в порошке. Серия «BUSINESS»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/6_edible-gold_powder_02-1.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/6_edible-gold_powder_02-1-300x300.jpg"
+  "desc": [
+   "d15"
+  ],
+  "feats": [
+   "d29"
+  ],
+  "gallery": [
+   "575",
+   "564",
+   "554",
+   "528"
+  ]
  },
  {
   "id": "570",
@@ -246,8 +552,21 @@
   "weight": "25 лист.",
   "series": "LUXURY",
   "title": "Пищевое золото листовое Giusto Manetti Battiloro в книжках, 25 листов. Серия «LUXURY»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/13_edible-gold_sheets_5.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/13_edible-gold_sheets_5-300x300.jpg"
+  "desc": [
+   "d15"
+  ],
+  "feats": [
+   "d25",
+   "d29"
+  ],
+  "size": "Размер листа: 80 х 80 мм",
+  "pack": "1 книжка",
+  "gallery": [
+   "567",
+   "571",
+   "572",
+   "573"
+  ]
  },
  {
   "id": "565",
@@ -256,8 +575,24 @@
   "weight": "5 лист.",
   "series": "LUXURY",
   "title": "Пищевое золото листовое трансферное Giusto Manetti Battiloro в книжках, 5 листов. Серия «LUXURY»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/14_edible-gold_sheets_5-383x383-1.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/14_edible-gold_sheets_5-383x383-1-300x300.jpg"
+  "desc": [
+   "d15"
+  ],
+  "feats": [
+   "d25",
+   "d26",
+   "d27",
+   "d28",
+   "d29"
+  ],
+  "size": "Размер листа: 86 х 86 мм",
+  "pack": "1 книжка",
+  "gallery": [
+   "566",
+   "567",
+   "568",
+   "569"
+  ]
  },
  {
   "id": "555",
@@ -266,8 +601,21 @@
   "weight": "0,2 г",
   "series": "LUXURY",
   "title": "Пищевое золото Giusto Manetti Battiloro 0,2 гр. в хлопьях. Серия «LUXURY»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/6_edible-gold_flakes_3.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/6_edible-gold_flakes_3-300x300.jpg"
+  "desc": [
+   "d15"
+  ],
+  "feats": [
+   "d30",
+   "d21",
+   "d31"
+  ],
+  "size": "Средний диаметр частицы золота 30 мм.",
+  "pack": "Стеклянная емкость, высота 66 мм, диаметр 74 мм",
+  "gallery": [
+   "562",
+   "563",
+   "564"
+  ]
  },
  {
   "id": "551",
@@ -276,8 +624,20 @@
   "weight": "0,2 г",
   "series": "LUXURY",
   "title": "Пищевое золото Giusto Manetti Battiloro 0,2 гр. в порошке. Серия «LUXURY»",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/7_edible-gold_powder_02-scaled.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/7_edible-gold_powder_02-scaled-300x300.jpg"
+  "desc": [
+   "d15"
+  ],
+  "feats": [
+   "d30",
+   "d21",
+   "d31"
+  ],
+  "gallery": [
+   "553",
+   "552",
+   "541",
+   "554"
+  ]
  },
  {
   "id": "546",
@@ -286,8 +646,23 @@
   "weight": "3 г",
   "series": "Gold Chef Professional",
   "title": "Пищевое золото Giusto Manetti Battiloro 3 гр. в хлопьях. Серия GOLD CHEF “PROFESSIONAL”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/horeca_fiocchioro_3g_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/horeca_fiocchioro_3g_goldchef-300x300.jpg"
+  "desc": [
+   "d15"
+  ],
+  "feats": [
+   "d32",
+   "d33",
+   "d21",
+   "d22"
+  ],
+  "size": "Средний диаметр частицы золота 30 мм.",
+  "pack": "Стеклянная емкость, высота 200 мм, диаметр 80 мм",
+  "gallery": [
+   "547",
+   "548",
+   "549",
+   "550"
+  ]
  },
  {
   "id": "543",
@@ -296,8 +671,23 @@
   "weight": "3 г",
   "series": "Gold Chef Professional",
   "title": "Пищевое золото Giusto Manetti Battiloro 3 гр. в крошке. Серия GOLD CHEF “PROFESSIONAL”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/horeca_fiocchioro_1g_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/horeca_fiocchioro_1g_goldchef-300x300.jpg"
+  "desc": [
+   "d15"
+  ],
+  "feats": [
+   "d32",
+   "d33",
+   "d21",
+   "d22"
+  ],
+  "size": "Средний диаметр частицы золота 4 мм.",
+  "pack": "Стеклянная солонка, высота 122 мм, диаметр 74 мм",
+  "gallery": [
+   "534",
+   "540",
+   "541",
+   "544"
+  ]
  },
  {
   "id": "538",
@@ -306,8 +696,22 @@
   "weight": "3 г",
   "series": "Gold Chef Professional",
   "title": "Пищевое золото Giusto Manetti Battiloro 3 гр. в порошке. Cерия GOLD CHEF “PROFESSIONAL”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/horeca_polvereoro_3g_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/horeca_polvereoro_3g_goldchef-300x300.jpg"
+  "desc": [
+   "d15"
+  ],
+  "feats": [
+   "d32",
+   "d33",
+   "d21",
+   "d22"
+  ],
+  "size": "Средний диаметр частицы золота 1 мм.",
+  "pack": "Стеклянная солонка, высота 122 мм, диаметр 74 мм",
+  "gallery": [
+   "539",
+   "540",
+   "541"
+  ]
  },
  {
   "id": "533",
@@ -316,8 +720,23 @@
   "weight": "1 г",
   "series": "Gold Chef Professional",
   "title": "Пищевое золото Giusto Manetti Battiloro 1 гр. в хлопьях. Серия GOLD CHEF “PROFESSIONAL”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/horeca_fiocchioro_1g_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/horeca_fiocchioro_1g_goldchef-300x300.jpg"
+  "desc": [
+   "d15"
+  ],
+  "feats": [
+   "d32",
+   "d33",
+   "d21",
+   "d22"
+  ],
+  "size": "Средний диаметр частицы золота 30 мм.",
+  "pack": "Стеклянная емкость, высота 120 мм, диаметр 74 мм",
+  "gallery": [
+   "534",
+   "535",
+   "536",
+   "537"
+  ]
  },
  {
   "id": "531",
@@ -326,8 +745,21 @@
   "weight": "1 г",
   "series": "Gold Chef Professional",
   "title": "Пищевое золото Giusto Manetti Battiloro 1 гр. в крошке. Серия GOLD CHEF “PROFESSIONAL”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/horeca_bricioleoro_1g_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/horeca_bricioleoro_1g_goldchef-300x300.jpg"
+  "desc": [
+   "d15"
+  ],
+  "feats": [
+   "d32",
+   "d33",
+   "d21",
+   "d22"
+  ],
+  "gallery": [
+   "532",
+   "504",
+   "502",
+   "490"
+  ]
  },
  {
   "id": "527",
@@ -336,8 +768,22 @@
   "weight": "1 г",
   "series": "Gold Chef Professional",
   "title": "Пищевое золото Giusto Manetti Battiloro 1 гр. в порошке. Серия GOLD CHEF “PROFESSIONAL”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/horeca_polvereoro_1g_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/horeca_polvereoro_1g_goldchef-300x300.jpg"
+  "desc": [
+   "d15"
+  ],
+  "feats": [
+   "d32",
+   "d33",
+   "d21",
+   "d22"
+  ],
+  "size": "Средний диаметр частицы золота 1 мм.",
+  "pack": "Стеклянная солонка, высота 66 мм, диаметр 74 мм",
+  "gallery": [
+   "530",
+   "529",
+   "528"
+  ]
  },
  {
   "id": "520",
@@ -346,8 +792,21 @@
   "weight": "25 лист.",
   "series": "Gold Chef",
   "title": "Пищевое золото листовое Giusto Manetti Battiloro в книжках, 25 листов. Серия GOLD CHEF",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_fogliaoro_86x86_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_fogliaoro_86x86_goldchef-300x300.jpg"
+  "desc": [
+   "d15",
+   "d29"
+  ],
+  "feats": [
+   "d34"
+  ],
+  "size": "Размер листа: 80 х 80 мм",
+  "pack": "1 книжка",
+  "gallery": [
+   "512",
+   "525",
+   "522",
+   "524"
+  ]
  },
  {
   "id": "519",
@@ -356,8 +815,23 @@
   "weight": "0,2 г",
   "series": "Gold Chef Family & Friends",
   "title": "Пищевое золото Giusto Manetti Battiloro 0,2 гр. в крошке. Серия GOLD CHEF “FAMILY&FRIENDS”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_bricioleoro_125mg_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_bricioleoro_125mg_goldchef-300x300.jpg"
+  "desc": [
+   "d35"
+  ],
+  "feats": [
+   "d36",
+   "d37",
+   "d38",
+   "d19"
+  ],
+  "size": "Средний диаметр частицы золота 4 мм.",
+  "pack": "Стеклянная солонка, высота 75 мм, диаметр 34 мм",
+  "gallery": [
+   "505",
+   "503",
+   "502",
+   "504"
+  ]
  },
  {
   "id": "516",
@@ -366,8 +840,22 @@
   "weight": "0,2 г",
   "series": "Gold Chef Family & Friends",
   "title": "Пищевое золото Giusto Manetti Battiloro 0,2 гр. в порошке. Серия GOLD CHEF “FAMILY&FRIENDS”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_polvereoro_125mg_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_polvereoro_125mg_goldchef-300x300.jpg"
+  "desc": [
+   "d39"
+  ],
+  "feats": [
+   "d36",
+   "d37",
+   "d38",
+   "d19"
+  ],
+  "size": "Средний диаметр частицы золота 1 мм.",
+  "pack": "Стеклянная солонка, высота 75 мм, диаметр 34 мм",
+  "gallery": [
+   "497",
+   "499",
+   "498"
+  ]
  },
  {
   "id": "511",
@@ -376,8 +864,21 @@
   "weight": "5 лист.",
   "series": "Gold Chef",
   "title": "Пищевое золото листовое Giusto Manetti Battiloro в книжках, 5 листов. Серия GOLD CHEF",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_fogliaoro_86x86_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_fogliaoro_86x86_goldchef-300x300.jpg"
+  "desc": [
+   "d15",
+   "d29"
+  ],
+  "feats": [
+   "d34"
+  ],
+  "size": "Размер листа: 80 х 80 мм",
+  "pack": "1 книжка",
+  "gallery": [
+   "512",
+   "513",
+   "514",
+   "515"
+  ]
  },
  {
   "id": "507",
@@ -386,8 +887,22 @@
   "weight": "0,2 г",
   "series": "Gold Chef Family & Friends",
   "title": "Пищевое золото Giusto Manetti Battiloro 0,2 гр. в хлопьях. Серия GOLD CHEF “FAMILY&FRIENDS”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_fiocchioro_125mg_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_fiocchioro_125mg_goldchef-300x300.jpg"
+  "desc": [
+   "d40"
+  ],
+  "feats": [
+   "d36",
+   "d41",
+   "d38",
+   "d19"
+  ],
+  "size": "Средний диаметр частицы золота 30 мм.",
+  "pack": "Стеклянная солонка, высота 75 мм, диаметр 34 мм",
+  "gallery": [
+   "508",
+   "509",
+   "510"
+  ]
  },
  {
   "id": "500",
@@ -396,8 +911,23 @@
   "weight": "0,125 г",
   "series": "Gold Chef Family & Friends",
   "title": "Пищевое золото Giusto Manetti Battiloro 0,125 гр. в крошке. Серия GOLD CHEF “FAMILY&FRIENDS”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_bricioleoro_125mg_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_bricioleoro_125mg_goldchef-300x300.jpg"
+  "desc": [
+   "d35"
+  ],
+  "feats": [
+   "d36",
+   "d37",
+   "d38",
+   "d19"
+  ],
+  "size": "Средний диаметр частицы золота 4 мм.",
+  "pack": "Стеклянная солонка, высота 75 мм, диаметр 34 мм",
+  "gallery": [
+   "505",
+   "503",
+   "502",
+   "504"
+  ]
  },
  {
   "id": "496",
@@ -406,8 +936,22 @@
   "weight": "0,125 г",
   "series": "Gold Chef Family & Friends",
   "title": "Пищевое золото Giusto Manetti Battiloro 0,125 гр. в порошке. Серия GOLD CHEF “FAMILY&FRIENDS”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_polvereoro_125mg_goldchef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/04/familyandfriends_polvereoro_125mg_goldchef-300x300.jpg"
+  "desc": [
+   "d39"
+  ],
+  "feats": [
+   "d36",
+   "d37",
+   "d38",
+   "d19"
+  ],
+  "size": "Средний диаметр частицы золота 1 мм.",
+  "pack": "Стеклянная солонка, высота 75 мм, диаметр 34 мм",
+  "gallery": [
+   "497",
+   "499",
+   "498"
+  ]
  },
  {
   "id": "495",
@@ -416,8 +960,22 @@
   "weight": "3 лист.",
   "series": "Gold Chef",
   "title": "Пищевое золото листовое Giusto Manetti Battiloro в книжках, 3 листа. Серия GOLD CHEF",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_FogliaOro_50x50mm_GoldChef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_FogliaOro_50x50mm_GoldChef-300x300.jpg"
+  "desc": [
+   "d15"
+  ],
+  "feats": [
+   "d34",
+   "d42",
+   "d29"
+  ],
+  "size": "Размер листа: 50 х 50 мм",
+  "pack": "1 книжка",
+  "gallery": [
+   "301",
+   "482",
+   "298",
+   "483"
+  ]
  },
  {
   "id": "492",
@@ -426,8 +984,21 @@
   "weight": "0,07 г",
   "series": "Gold Chef You & Me",
   "title": "Пищевое золото Giusto Manetti Battiloro 0,07 гр. в хлопьях. Серия GOLD CHEF “YOU&ME”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_FiocchiOro_70mg_GoldChef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_FiocchiOro_70mg_GoldChef-300x300.jpg"
+  "desc": [
+   "d43"
+  ],
+  "feats": [
+   "d44",
+   "d12",
+   "d7",
+   "d45"
+  ],
+  "gallery": [
+   "297",
+   "298",
+   "493",
+   "494"
+  ]
  },
  {
   "id": "488",
@@ -436,8 +1007,23 @@
   "weight": "0,07 г",
   "series": "Gold Chef You & Me",
   "title": "Пищевое золото Giusto Manetti Battiloro 0,07 гр. в крошке. Серия GOLD CHEF “YOU&ME”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_BricioleOro_70mg_GoldChef-1.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_BricioleOro_70mg_GoldChef-1-300x300.jpg"
+  "desc": [
+   "d43"
+  ],
+  "feats": [
+   "d44",
+   "d12",
+   "d7",
+   "d13"
+  ],
+  "size": "Средний диаметр частицы золота 4 мм.",
+  "pack": "Пакет, высота 11,5 см, ширина 10 см",
+  "gallery": [
+   "392",
+   "489",
+   "490",
+   "491"
+  ]
  },
  {
   "id": "484",
@@ -446,8 +1032,21 @@
   "weight": "0,07 г",
   "series": "Gold Chef You & Me",
   "title": "Пищевое золото Giusto Manetti Battiloro 0,07 гр. в порошке. Серия GOLD CHEF “YOU&ME”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_PolvereOro_70mg_GoldChef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_PolvereOro_70mg_GoldChef-300x300.jpg"
+  "desc": [
+   "d43"
+  ],
+  "feats": [
+   "d44",
+   "d12",
+   "d7",
+   "d13"
+  ],
+  "gallery": [
+   "397",
+   "485",
+   "486",
+   "487"
+  ]
  },
  {
   "id": "293",
@@ -456,8 +1055,19 @@
   "weight": "0,04 г",
   "series": "Gold Chef You & Me",
   "title": "Пищевое золото Giusto Manetti Battiloro 0,04 гр. в хлопьях. Серия GOLD CHEF “YOU&ME”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_FiocchiOro_70mg_GoldChef.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_FiocchiOro_70mg_GoldChef-300x300.jpg"
+  "desc": [
+   "d43"
+  ],
+  "feats": [
+   "d44",
+   "d12",
+   "d7",
+   "d45"
+  ],
+  "gallery": [
+   "297",
+   "298"
+  ]
  },
  {
   "id": "287",
@@ -466,8 +1076,18 @@
   "weight": "0,04 г",
   "series": "Gold Chef You & Me",
   "title": "Пищевое золото Giusto Manetti Battiloro 0,04 гр. в крошке. Серия GOLD CHEF “YOU&ME”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_BricioleOro_70mg_GoldChef-383x383-1.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_BricioleOro_70mg_GoldChef-383x383-1-300x300.jpg"
+  "desc": [
+   "d43"
+  ],
+  "feats": [
+   "d44",
+   "d12",
+   "d7",
+   "d45"
+  ],
+  "gallery": [
+   "289"
+  ]
  },
  {
   "id": "285",
@@ -476,7 +1096,17 @@
   "weight": "0,04 г",
   "series": "Gold Chef You & Me",
   "title": "Пищевое золото Giusto Manetti Battiloro 0,04 гр. в порошке. Серия GOLD CHEF “YOU&ME”",
-  "imgFull": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_PolvereOro_70mg_GoldChef-383x383-1.jpg",
-  "imgThumb": "https://giustomanetti.uz/wp-content/uploads/2023/03/YouandMe_PolvereOro_70mg_GoldChef-383x383-1-300x300.jpg"
+  "desc": [
+   "d43"
+  ],
+  "feats": [
+   "d44",
+   "d12",
+   "d7",
+   "d45"
+  ],
+  "gallery": [
+   "286"
+  ]
  }
 ]

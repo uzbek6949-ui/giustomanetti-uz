@@ -2,10 +2,10 @@
    Ishga tushirish:  node build.mjs
    Matnni o'zgartirish uchun bu fayl EMAS, assets/m-copy.js tahrirlanadi. */
 
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile, rm, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
-import { buildProducts } from './gen-products.mjs';
+import { buildProducts, productPages } from './gen-products.mjs';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const src = (f) => readFile(join(ROOT, 'src', f), 'utf8');
@@ -26,7 +26,7 @@ const PAGES = [
     desc:  "Сусальное золото 24K, серебро, палладий, платина, болюс, миссии, защитные составы и инструменты для золочения. Поставки по Узбекистану." },
   { file: 'mahsulotlar.html', tkey: 't.prod',
     title: "Продукция · съедобное золото и серебро · Giusto Manetti Battiloro",
-    desc:  "Съедобное золото и серебро 24K Giusto Manetti Battiloro: лист, хлопья, крошка, пудра. Серии Gold Chef, Luxury, Business. Поставки по Узбекистану." },
+    desc:  "Съедобное золото 23 карата и серебро Giusto Manetti Battiloro: лист, хлопья, крошка, пудра. Серии Gold Chef, Luxury, Business. Поставки по Узбекистану." },
   { file: 'kosmetika.html', tkey: 't.kos',
     title: "Косметическое золото 24K · Giusto Manetti Battiloro",
     desc:  "Сусальное золото 24K для косметологии: маски для лица, патчи под глаза, салонные процедуры и производство косметики. Поставки по Узбекистану." },
@@ -54,3 +54,23 @@ for (const p of PAGES) {
   console.log('  ' + p.file + '  ' + html.length + ' bayt');
 }
 console.log(PAGES.length + ' ta sahifa yig‘ildi.');
+
+/* Har bir mahsulotning alohida sahifasi: mahsulot/<id>.html
+   Papka ichida bo'lgani uchun <base href="../"> qo'yamiz: barcha havolalar
+   (assets/, index.html ...) ildizdan ochiladi. */
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+const items = await productPages();
+await rm(join(ROOT, 'mahsulot'), { recursive: true, force: true });
+await mkdir(join(ROOT, 'mahsulot'));
+for (const p of items) {
+  const html = head
+      .replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<base href="../">')
+      .replaceAll('{{TITLE}}', esc(p.title))
+      .replaceAll('{{DESC}}',  esc(p.desc))
+      .replaceAll('{{TKEY}}',  'pd.title')
+      .replaceAll('{{FILE}}',  'mahsulot/' + p.id + '.html')
+      .replace('https://giustomanetti.uz/assets/poster/hero.jpg', 'https://giustomanetti.uz/' + p.ogimg)
+    + '\n' + header + '\n' + p.body + '\n' + footer;
+  await writeFile(join(ROOT, 'mahsulot', p.id + '.html'), html, 'utf8');
+}
+console.log(items.length + ' ta mahsulot sahifasi: mahsulot/*.html');

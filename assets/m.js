@@ -8,6 +8,13 @@ document.documentElement.classList.remove("nojs");
 
 var TG = "https://t.me/manettiuz";
 
+/* sahifaga xos matnlar (mahsulot sahifalari): umumiy lug'atga qo'shamiz */
+if (window.TXT && window.TXT_X) {
+  ["ru", "uz", "en"].forEach(function (l) {
+    if (window.TXT[l] && window.TXT_X[l]) for (var k in window.TXT_X[l]) window.TXT[l][k] = window.TXT_X[l][k];
+  });
+}
+
 /* ------------------------------------------------------------ 1. til ----- */
 var lang = (function () {
   try { var s = localStorage.getItem("gm-lang"); if (s && window.TXT && window.TXT[s]) return s; } catch (e) {}
@@ -78,6 +85,7 @@ if (burger) {
 /* joriy sahifani menyuda belgilash */
 (function () {
   var here = location.pathname.split("/").pop() || "index.html";
+  if (location.pathname.indexOf("/mahsulot/") > -1) here = "mahsulotlar.html";
   document.querySelectorAll(".nav a, .drawer a").forEach(function (a) {
     var h = (a.getAttribute("href") || "").split("#")[0];
     if (h && h === here) a.setAttribute("aria-current", "page");
@@ -264,9 +272,13 @@ function attachClip(f, manual) {
 
 /* ------------------------------------------------------- 5. galereya ---- */
 var lb = document.querySelector(".lb");
+var pg = document.querySelector(".pg");   /* mahsulot sahifasidagi galereya */
 if (lb) {
-  var lbImg = lb.querySelector("img"), items = [].slice.call(document.querySelectorAll(".gi")), idx = 0;
+  var lbImg = lb.querySelector("img"), idx = 0;
+  var items = [].slice.call(document.querySelectorAll(pg ? ".pg__src" : ".gi"));
+  if (items.length < 2) lb.classList.add("lb--one");
   function open(i) {
+    if (!items.length) return;
     idx = (i + items.length) % items.length;
     var im = items[idx].querySelector("img");
     lbImg.src = im.getAttribute("data-full") || im.src;
@@ -274,7 +286,24 @@ if (lb) {
     lb.classList.add("on"); document.body.classList.add("lock");
   }
   function close() { lb.classList.remove("on"); document.body.classList.remove("lock"); lbImg.removeAttribute("src"); }
-  items.forEach(function (el, i) { el.addEventListener("click", function () { open(i); }); });
+  if (!pg) items.forEach(function (el, i) { el.addEventListener("click", function () { open(i); }); });
+
+  /* galereya: kichik rasm bosilsa katta rasm almashadi, katta rasm bosilsa kattalashadi */
+  if (pg) {
+    var main = pg.querySelector(".pg__main"), mainImg = main.querySelector("img"), cur = 0;
+    var thumbs = [].slice.call(pg.querySelectorAll(".pg__th .pg__src"));
+    thumbs.forEach(function (b, i) {
+      b.addEventListener("click", function () {
+        cur = i;
+        var im = b.querySelector("img");
+        mainImg.src = im.getAttribute("data-full");
+        if (im.getAttribute("data-w")) { mainImg.width = +im.getAttribute("data-w"); mainImg.height = +im.getAttribute("data-h"); }
+        thumbs.forEach(function (x, j) { x.setAttribute("aria-current", j === i ? "true" : "false"); });
+      });
+    });
+    main.addEventListener("click", function () { open(cur); });
+  }
+
   lb.querySelector(".lb__x").addEventListener("click", close);
   lb.querySelector(".lb__p").addEventListener("click", function () { open(idx - 1); });
   lb.querySelector(".lb__n").addEventListener("click", function () { open(idx + 1); });
@@ -287,11 +316,51 @@ if (lb) {
   });
 }
 
+/* --------------------------------------------- mahsulotlar: filtr ------- */
+var pfil = document.querySelector(".pfil");
+if (pfil) {
+  var chips = [].slice.call(pfil.querySelectorAll(".chip"));
+  chips.forEach(function (c) {
+    c.addEventListener("click", function () {
+      var f = c.getAttribute("data-f");
+      chips.forEach(function (x) { x.setAttribute("aria-pressed", x === c ? "true" : "false"); });
+      document.querySelectorAll(".psec").forEach(function (sec) {
+        var n = 0;
+        sec.querySelectorAll(".pcard").forEach(function (card) {
+          var show = f === "all" || card.getAttribute("data-form") === f;
+          card.hidden = !show;
+          if (show) { n++; card.classList.add("in"); }
+        });
+        sec.hidden = n === 0;
+        var cnt = sec.querySelector(".psec__n b");
+        if (cnt) cnt.textContent = n;
+      });
+    });
+  });
+}
+
 /* ---------------------------------------------------------- 6. forma ---- */
+/* mahsulot sahifasidagi "Narxini bilish": mahsulot nomini formaga olib o'tamiz */
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest("[data-prod]");
+  if (!a) return;
+  var h = document.querySelector("h1");
+  try { sessionStorage.setItem("gm-prod", JSON.stringify({ n: h ? h.textContent.trim() : "", m: a.getAttribute("data-prod") })); } catch (err) {}
+});
+
 var form = document.getElementById("form");
 if (form) {
   var ok = document.getElementById("ok"), send = document.getElementById("send"), busy = false;
   function say(k) { ok.textContent = t(k); ok.classList.add("on"); }
+
+  try {
+    var pr = JSON.parse(sessionStorage.getItem("gm-prod") || "null");
+    sessionStorage.removeItem("gm-prod");
+    if (pr && pr.n) {
+      if (form.elements.message) form.elements.message.value = t("pd.req") + " " + pr.n;
+      if (form.elements.interest) form.elements.interest.selectedIndex = pr.m === "silver" ? 1 : 0;
+    }
+  } catch (err) {}
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
