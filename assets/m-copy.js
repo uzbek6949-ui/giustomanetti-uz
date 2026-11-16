@@ -162,6 +162,9 @@ ru:{
 
   /* --- gallery --- */
   "gl2.eye":"Галерея","gl2.h":"Золото<br>в работе",
+  "gl2.sheye":"Ташкент","gl2.sh":"Наш шоурум",
+  "gl2.shp":"Весь ассортимент Giusto Manetti Battiloro — лист, хлопья, съедобное золото, материалы и инструменты — можно увидеть и потрогать вживую.",
+  "gl2.weye":"Работы","gl2.wh":"Золото в деле",
   "gl2.p":"Своды и фасады, рамы и иконы, десерты и коктейли. Один и тот же лист, разные ремёсла.",
 
   /* --- aloqa --- */
@@ -341,6 +344,9 @@ uz:{
   "a.ask":"Usul boʻyicha maslahat yoki aniq vazifaga material tanlash kerakmi? Yozing, aytib beramiz.",
 
   "gl2.eye":"Galereya","gl2.h":"Oltin<br>ish ustida",
+  "gl2.sheye":"Toshkent","gl2.sh":"Bizning shourum",
+  "gl2.shp":"Giusto Manetti Battiloro mahsulotlarining hammasi — varaq, parracha, yeyiladigan oltin, materiallar va asboblar — jonli ko‘rish va qo‘lga olib ko‘rish mumkin.",
+  "gl2.weye":"Ishlar","gl2.wh":"Oltin ish ustida",
   "gl2.p":"Gumbaz va fasadlar, ramka va ikonalar, shirinlik va kokteyllar. Bitta varaq, turli hunarlar.",
 
   "c.eye":"Aloqa","c.h":"Oltin haqida<br>gaplashamiz",
@@ -519,6 +525,9 @@ en:{
   "a.ask":"Need advice on a technique, or the right materials for a particular job? Write to us and we will talk it through.",
 
   "gl2.eye":"Gallery","gl2.h":"Gold<br>at work",
+  "gl2.sheye":"Tashkent","gl2.sh":"Our showroom",
+  "gl2.shp":"The full Giusto Manetti Battiloro range — leaf, flakes, edible gold, materials and tools — can be seen and handled in person.",
+  "gl2.weye":"Works","gl2.wh":"Gold at work",
   "gl2.p":"Vaults and facades, frames and icons, desserts and cocktails. One and the same leaf, different trades.",
 
   "c.eye":"Contact","c.h":"Let's talk<br>about gold",

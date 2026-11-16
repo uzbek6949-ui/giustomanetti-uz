@@ -855,3 +855,9 @@ button.btn:disabled{ opacity:.6; cursor:wait; transform:none }
 }
 .btn{ white-space:nowrap }
 .hdr__l > .hsoc{ padding-left:.9rem; border-left:1px solid var(--line-soft) }
+
+/* --------------------------------------- galereya bo'lim sarlavhasi -- */
+.shx{ margin:0 0 clamp(1.1rem,2.2vw,1.6rem) }
+.shx .eyebrow{ display:block; margin-bottom:.5rem }
+.shx h2{ margin:0 0 .5rem }
+.shx p{ max-width:52ch; margin:0; color:var(--ink-soft) }
