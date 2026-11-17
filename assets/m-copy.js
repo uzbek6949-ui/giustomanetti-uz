@@ -182,6 +182,7 @@ ru:{
   "f.o3":"Сусальное золото для золочения","f.o4":"Опт / HoReCa",
   "f.note":"Или напишите в Telegram: <a href=\"https://t.me/manettiuz\" target=\"_blank\" rel=\"noopener\">@manettiuz</a>",
   "f.err":"Заполните имя и телефон.",
+  "f.errtel":"Введите номер полностью: +998 и 9 цифр.",
   "f.ok":"Заявка отправлена. Свяжемся с вами в рабочее время.",
   "f.ok2":"Заявка скопирована, открыт Telegram. Вставьте её в чат.",
 
@@ -363,6 +364,7 @@ uz:{
   "f.o3":"Zarhallash uchun varaq oltin","f.o4":"Ulgurji / HoReCa",
   "f.note":"Yoki Telegramda yozing: <a href=\"https://t.me/manettiuz\" target=\"_blank\" rel=\"noopener\">@manettiuz</a>",
   "f.err":"Ism va telefon raqamini toʻldiring.",
+  "f.errtel":"Raqamni toʻliq kiriting: +998 va 9 ta raqam.",
   "f.ok":"Ariza yuborildi. Ish vaqtida siz bilan bogʻlanamiz.",
   "f.ok2":"Ariza nusxalandi, Telegram ochildi. Uni chatga qoʻying.",
 
@@ -544,6 +546,7 @@ en:{
   "f.o3":"Gold leaf for gilding","f.o4":"Wholesale / HoReCa",
   "f.note":"Or message us on Telegram: <a href=\"https://t.me/manettiuz\" target=\"_blank\" rel=\"noopener\">@manettiuz</a>",
   "f.err":"Please fill in your name and phone number.",
+  "f.errtel":"Enter the full number: +998 and 9 digits.",
   "f.ok":"Request sent. We will get back to you during working hours.",
   "f.ok2":"Your request has been copied and Telegram is open. Paste it into the chat.",
 

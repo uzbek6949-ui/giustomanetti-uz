@@ -348,10 +348,66 @@ document.addEventListener("click", function (e) {
   try { sessionStorage.setItem("gm-prod", JSON.stringify({ n: h ? h.textContent.trim() : "", m: a.getAttribute("data-prod") })); } catch (err) {}
 });
 
+/* Telefon maydoni: "+998" doim turadi, keyin faqat 9 ta raqam.
+   Yozilayotganda o'zi bo'shliq qo'yadi: +998 90 123 45 67 */
+function phoneMask(inp) {
+  if (!inp) return;
+
+  function digits(v) {
+    var d = String(v).replace(/\D/g, "");
+    /* Mamlakat kodi qanday yozilgan bo'lsa ham tozalaymiz */
+    if (d.indexOf("998") === 0) d = d.slice(3);
+    else if (d.indexOf("8") === 0 && d.length > 9) d = d.slice(1);
+    return d.slice(0, 9);          /* 9 tadan ortiq raqam qabul qilinmaydi */
+  }
+
+  function format(d) {
+    if (!d) return "";
+    var s = "+998 " + d.slice(0, 2);
+    if (d.length > 2) s += " " + d.slice(2, 5);
+    if (d.length > 5) s += " " + d.slice(5, 7);
+    if (d.length > 7) s += " " + d.slice(7, 9);
+    return s;
+  }
+
+  inp.setAttribute("inputmode", "tel");
+  inp.setAttribute("maxlength", "17");   /* "+998 90 123 45 67" = 17 belgi */
+
+  function redraw() {
+    var atEnd = inp.selectionStart === inp.value.length;
+    inp.value = format(digits(inp.value));
+    if (atEnd) { try { inp.setSelectionRange(inp.value.length, inp.value.length); } catch (e) {} }
+  }
+
+  inp.addEventListener("input", redraw);
+  inp.addEventListener("paste", function () { setTimeout(redraw, 0); });
+
+  inp.addEventListener("focus", function () {
+    if (!inp.value) { inp.value = "+998 "; }
+    setTimeout(function () {
+      try { inp.setSelectionRange(inp.value.length, inp.value.length); } catch (e) {}
+    }, 0);
+  });
+
+  inp.addEventListener("blur", function () {
+    if (digits(inp.value).length === 0) inp.value = "";   /* faqat "+998 " qolsa — tozalaymiz */
+  });
+
+  /* "+998" ni o'chirib bo'lmasin */
+  inp.addEventListener("keydown", function (e) {
+    if ((e.key === "Backspace" || e.key === "Delete") && inp.selectionStart <= 5 && inp.selectionEnd <= 5) {
+      if (digits(inp.value).length === 0) e.preventDefault();
+    }
+  });
+
+  inp.gmDigits = function () { return digits(inp.value); };
+}
+
 var form = document.getElementById("form");
 if (form) {
   var ok = document.getElementById("ok"), send = document.getElementById("send"), busy = false;
   function say(k) { ok.textContent = t(k); ok.classList.add("on"); }
+  phoneMask(form.elements.phone);
 
   try {
     var pr = JSON.parse(sessionStorage.getItem("gm-prod") || "null");
@@ -376,6 +432,15 @@ if (form) {
       page: (location.hostname || "local") + location.pathname
     };
     if (!data.name || !data.phone) { say("f.err"); return; }
+
+    /* Telefon to'liq bo'lsin: +998 dan keyin aynan 9 ta raqam */
+    var pd = el.phone.gmDigits ? el.phone.gmDigits() : data.phone.replace(/\D/g, "");
+    if (pd.length !== 9) {
+      say("f.errtel");
+      el.phone.focus();
+      return;
+    }
+    data.phone = "+998 " + pd.slice(0, 2) + " " + pd.slice(2, 5) + " " + pd.slice(5, 7) + " " + pd.slice(7, 9);
 
     var text = "Giusto Manetti, " +
       (lang === "uz" ? "yangi ariza" : lang === "en" ? "new request" : "новая заявка") + "\n" +
