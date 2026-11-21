@@ -13,7 +13,7 @@ WordPress, maʼlumotlar bazasi yoki build jarayoni kerak emas: oddiy HTML.
 | Fayl | Nima |
 |---|---|
 | `index.html` | Bosh sahifa: hero, Katalog/Gold Chef, Vitrina, Academy, Galereya, Biz haqimizda |
-| `katalog.html` | B2B: zarhallash materiallari, 6 guruh |
+| `katalog.html` | B2B: zarhallash materiallari, 6 guruh + **Manetti kataloglari** (varaqlagich, PDF), katalogning 6 boʻlimi, katalogdan 12 mahsulot |
 | `goldchef.html` | Yeyiladigan oltin va kumush, 6 mahsulot, qoʻllash yoʻriqnomasi |
 | `academy.html` | Zarhallash maktabi, 4 ta usul |
 | `galereya.html` | Galereya, rasm kattalashadi (← → Esc) |
@@ -27,6 +27,10 @@ WordPress, maʼlumotlar bazasi yoki build jarayoni kerak emas: oddiy HTML.
 assets/m.css       dizayn
 assets/m-copy.js   BARCHA matnlar, 3 tilda   <- matnni shu yerda oʻzgartiring
 assets/m.js        menyu, til, galereya, forma, video
+assets/catalog.js  kataloglar varaqlagichi (katalog.html, qurilish.html)
+assets/katalog/    Manetti kataloglari: pdf/ va har sahifa rasmi (pNNN katta, tNNN kichik)
+assets/img/katalog/ katalogdan kesib olingan mahsulot rasmlari
+deploy/            LXC/VPS ga oʻrnatish skripti va Telegram tekshiruvi
 assets/video/      fon videolari + posterlar
 engine/            scroll.html uchun kutubxona
 src/               sahifa manbalari (build.mjs shulardan yigʻadi)
@@ -124,6 +128,32 @@ Brauzerda: `http://localhost:4180`
 
 ---
 
+## Manetti kataloglari (varaqlagich)
+
+`katalog.html` da ikkala katalog (Catalogo 2024, Belle Arti 2025) muqova, mundarija va
+PDF bilan turadi. Bosilsa toʻliq ekranli varaqlagich ochiladi: ← → / Home / End / Esc,
+telefonda surish, bosish yoki ikki marta tegish — kattalashtirish, "Barcha sahifalar".
+Havola bilan maʼlum sahifani ochish mumkin: `katalog.html?catalog=gmb-2024&page=13`.
+Har qanday elementga `data-cat="gmb-2024" data-page="13"` qoʻysangiz, bosilganda
+katalog shu sahifada ochiladi (`assets/catalog.js` ulangan sahifalarda).
+Katalog maʼlumotlari (sahifalar soni, mundarija) `assets/catalog.js` boshida.
+
+---
+
+## Oʻz serveriga (Proxmox LXC / VPS) oʻrnatish
+
+Batafsil: [`deploy/LXC-ORNATISH.md`](deploy/LXC-ORNATISH.md). Qisqasi:
+
+```bash
+DOMAIN=giustomanetti.uz TELEGRAM_BOT_TOKEN='...' TELEGRAM_CHAT_IDS='...' bash deploy/install-lxc.sh
+php deploy/tg-test.php          # Telegramga sinov xabari
+```
+
+Ariza Telegramga yetmasa, sababi server logida: `/var/log/nginx/giustomanetti.error.log`
+(brauzerga faqat qisqa kod qaytadi: `no_config`, `bad_config`, `telegram`).
+
+---
+
 ## Hostingga yuklash
 
 `public_html` (yoki `www`) papkasiga yuklang:
@@ -136,8 +166,8 @@ send.php
 config.php      <- buni QOʻLDA yaratasiz, GitHub'da yoʻq
 ```
 
-Kerak emas: `src/`, `build.mjs`, `make-clips.mjs`, `serve.mjs`,
-`README.md`, `config.example.php`, `.gitignore`.
+Kerak emas: `src/`, `deploy/`, `*.mjs`, `README.md`, `config.example.php`,
+`.gitignore`, `img-map.json`, `assets/products.json`, `assets/product-texts.json`.
 
 `send.php` uchun hostingda **PHP** boʻlishi shart. Boʻlmasa forma
 avtomatik zaxira yoʻlga oʻtadi: arizani nusxalaydi va Telegram ochadi.
