@@ -210,7 +210,7 @@ export async function buildProducts() {
     <div class="film__veil"></div>
     <div class="wrap film__in">
       <span class="eyebrow" data-t="pr.eye">Пищевое золото и серебро</span>
-      <h1 class="d2" data-t="pr.h">Продукция</h1>
+      <h1 class="d2" data-t="pr.h">Пищевой</h1>
     </div>
   </section>
 
@@ -371,7 +371,7 @@ ${feats}
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb">
         <a href="index.html" data-t="nav.home">Главная</a><span aria-hidden="true">/</span>
-        <a href="mahsulotlar.html" data-t="nav.prod">Продукция</a><span aria-hidden="true">/</span>
+        <a href="mahsulotlar.html" data-t="nav.prod">Пищевой</a><span aria-hidden="true">/</span>
         <a href="mahsulotlar.html#${p.metal}" data-t="${metalKey}">${metalRu}</a>
       </nav>
 

@@ -12,15 +12,15 @@ ru:{
   "t.ac":"Gilding Academy · школа золочения · Manetti",
   "t.gal":"Галерея · Giusto Manetti Battiloro",
   "t.con":"Контакты · Giusto Manetti Battiloro Узбекистан",
-  "t.prod":"Продукция · съедобное золото и серебро · Giusto Manetti Battiloro",
+  "t.prod":"Пищевой · съедобное золото и серебро · Giusto Manetti Battiloro",
   "t.qur":"Золочение в строительстве и декоре · Giusto Manetti Battiloro",
   "t.kos":"Косметическое золото 24K · Giusto Manetti Battiloro",
 
-  "nav.home":"Главная","nav.cat":"Каталог","nav.gc":"Gold Chef","nav.acad":"Академия","nav.gal":"Галерея","nav.con":"Контакты","nav.prod":"Продукция","nav.qur":"Строительство","nav.kos":"Косметика",
+  "nav.home":"Главная","nav.cat":"Каталог","nav.gc":"Gold Chef","nav.acad":"Академия","nav.gal":"Галерея","nav.con":"Контакты","nav.prod":"Пищевой","nav.qur":"Строительство","nav.kos":"Косметика",
   "top.l":"Официальный представитель в Узбекистане","top.r":"Пн–Пт, 9:00 до 18:00",
 
   /* --- mahsulotlar --- */
-  "pr.eye":"Пищевое золото и серебро","pr.h":"Продукция",
+  "pr.eye":"Пищевое золото и серебро","pr.h":"Пищевой",
   "pr.p":"Съедобное золото 23 карата и серебро Giusto Manetti Battiloro: лист, хлопья, крошка и пудра в сериях от профессиональной кухни до подарочного формата. Без вкуса и запаха, сертифицировано как краситель E175 (золото) и E174 (серебро).",
   "pr.note":"Цены — по запросу. Напишите, какие позиции и объём нужны, и мы подготовим предложение.",
   "pr.gold":"Пищевое золото","pr.silver":"Пищевое серебро",
@@ -109,7 +109,7 @@ ru:{
   /* --- bosh sahifa --- */
   "h.h1":"Giusto Manetti Battiloro,<br>производитель сусального золота во Флоренции <em>с 1600 года</em>",
   "h.sub":"Золото, серебро, палладий и платина в листе. Для кухни, для золочения, для реставрации. Теперь в Ташкенте.",
-  "p1.h":"Каталог","p1.p":"У вас мастерская золочения, реставрационная студия или магазин для художников? Каталог B2B рассчитан на тех, кому нужны сусальное золото и материалы для золочения в объёме. Подготовим отдельное предложение и поможем подобрать состав заказа.",
+  "p1.h":"Материалы для золочения","p1.p":"У вас мастерская золочения, реставрационная студия или магазин для художников? Каталог B2B рассчитан на тех, кому нужны сусальное золото и материалы для золочения в объёме. Подготовим отдельное предложение и поможем подобрать состав заказа.",
   "p2.h":"E-shop","p2.p":"Вы шеф-повар, кондитер или бариста? Съедобное золото 23 карата и серебро в листах, хлопьях, крошке и пудре. Без вкуса и запаха, допущено в ЕС как краситель E175. Продаём поштучно, без минимального заказа.",
 
   "vt.k":"Наша витрина","vt.t":"Наша<br>витрина",
@@ -246,15 +246,15 @@ uz:{
   "t.ac":"Gilding Academy · zarhallash maktabi · Manetti",
   "t.gal":"Galereya · Giusto Manetti Battiloro",
   "t.con":"Aloqa · Giusto Manetti Battiloro Oʻzbekiston",
-  "t.prod":"Mahsulotlar · yeyiladigan oltin va kumush · Giusto Manetti Battiloro",
+  "t.prod":"Oziq-ovqat · yeyiladigan oltin va kumush · Giusto Manetti Battiloro",
   "t.qur":"Qurilish va dekorda zarhallash · Giusto Manetti Battiloro",
   "t.kos":"Kosmetik oltin 24K · Giusto Manetti Battiloro",
 
-  "nav.home":"Bosh sahifa","nav.cat":"Katalog","nav.gc":"Gold Chef","nav.acad":"Akademiya","nav.gal":"Galereya","nav.con":"Aloqa","nav.prod":"Mahsulotlar","nav.qur":"Qurilish","nav.kos":"Kosmetika",
+  "nav.home":"Bosh sahifa","nav.cat":"Katalog","nav.gc":"Gold Chef","nav.acad":"Akademiya","nav.gal":"Galereya","nav.con":"Aloqa","nav.prod":"Oziq-ovqat","nav.qur":"Qurilish","nav.kos":"Kosmetika",
   "top.l":"Oʻzbekistondagi rasmiy vakil","top.r":"Dush–Jum, 9:00 dan 18:00 gacha",
 
   /* --- mahsulotlar --- */
-  "pr.eye":"Yeyiladigan oltin va kumush","pr.h":"Mahsulotlar",
+  "pr.eye":"Yeyiladigan oltin va kumush","pr.h":"Oziq-ovqat uchun",
   "pr.p":"Giusto Manetti Battiloro 23 karatli yeyiladigan oltin va kumush: varaq, parcha, kukuncha va kukun — professional oshxonadan sovgʻabop formatgacha turli seriyalarda. Taʼmi va hidi yoʻq, E175 (oltin) va E174 (kumush) boʻyoq sifatida sertifikatlangan.",
   "pr.note":"Narxlar — soʻrov boʻyicha. Qaysi mahsulot va qancha hajm kerakligini yozing, taklif tayyorlaymiz.",
   "pr.gold":"Yeyiladigan oltin","pr.silver":"Yeyiladigan kumush",
@@ -341,7 +341,7 @@ uz:{
 
   "h.h1":"Giusto Manetti Battiloro,<br><em>1600-yildan beri</em> Florentsiyada zarhal varaq ishlab chiqaruvchi",
   "h.sub":"Varaq holidagi oltin, kumush, palladiy va platina. Oshxona uchun, zarhallash uchun, restavratsiya uchun. Endi Toshkentda.",
-  "p1.h":"Katalog","p1.p":"Zarhallash ustaxonasi, restavratsiya studiyasi yoki rassomlar doʻkoningiz bormi? B2B katalog zarhal varaq va materiallarni koʻp miqdorda oladiganlar uchun. Alohida taklif tayyorlaymiz va buyurtma tarkibini tanlashga yordam beramiz.",
+  "p1.h":"Zarhallash materiallari","p1.p":"Zarhallash ustaxonasi, restavratsiya studiyasi yoki rassomlar doʻkoningiz bormi? B2B katalog zarhal varaq va materiallarni koʻp miqdorda oladiganlar uchun. Alohida taklif tayyorlaymiz va buyurtma tarkibini tanlashga yordam beramiz.",
   "p2.h":"E-shop","p2.p":"Siz oshpaz, qandolatchi yoki baristamisiz? 23 karatli yeyiladigan oltin va kumush: varaq, parcha, kukuncha va kukun. Taʼmi va hidi yoʻq, Yevropada E175 boʻyogʻi sifatida ruxsat etilgan. Donasiga sotamiz, eng kam buyurtma chegarasi yoʻq.",
 
   "vt.k":"Bizning vitrina","vt.t":"Bizning<br>vitrina",
@@ -473,15 +473,15 @@ en:{
   "t.ac":"Gilding Academy · Manetti",
   "t.gal":"Gallery · Giusto Manetti Battiloro",
   "t.con":"Contact · Giusto Manetti Battiloro Uzbekistan",
-  "t.prod":"Products · edible gold and silver · Giusto Manetti Battiloro",
+  "t.prod":"Food · edible gold and silver · Giusto Manetti Battiloro",
   "t.qur":"Gilding for architecture and decoration · Giusto Manetti Battiloro",
   "t.kos":"Cosmetic gold 24K · Giusto Manetti Battiloro",
 
-  "nav.home":"Home","nav.cat":"Catalogue","nav.gc":"Gold Chef","nav.acad":"Academy","nav.gal":"Gallery","nav.con":"Contact","nav.prod":"Products","nav.qur":"Architecture","nav.kos":"Cosmetics",
+  "nav.home":"Home","nav.cat":"Catalogue","nav.gc":"Gold Chef","nav.acad":"Academy","nav.gal":"Gallery","nav.con":"Contact","nav.prod":"Food","nav.qur":"Architecture","nav.kos":"Cosmetics",
   "top.l":"Official representative in Uzbekistan","top.r":"Mon to Fri, 9:00 to 18:00",
 
   /* --- mahsulotlar --- */
-  "pr.eye":"Edible gold and silver","pr.h":"Products",
+  "pr.eye":"Edible gold and silver","pr.h":"Food",
   "pr.p":"Giusto Manetti Battiloro 23-carat edible gold and silver: leaf, flakes, crumbs and powder, in series from the professional kitchen to gift formats. Tasteless and odourless, certified as colouring E175 (gold) and E174 (silver).",
   "pr.note":"Prices on request. Tell us which items and what quantity you need, and we will prepare an offer.",
   "pr.gold":"Edible gold","pr.silver":"Edible silver",
@@ -568,7 +568,7 @@ en:{
 
   "h.h1":"Giusto Manetti Battiloro,<br>making gold leaf in Florence <em>since 1600</em>",
   "h.sub":"Gold, silver, palladium and platinum in leaf. For the kitchen, for gilding, for restoration. Now in Tashkent.",
-  "p1.h":"Catalogue","p1.p":"Do you run a gilding studio, a restoration workshop or a fine-art shop? The B2B catalogue is for those who need gold leaf and gilding materials in volume. We prepare a dedicated quote and help you choose what goes into the order.",
+  "p1.h":"Gilding materials","p1.p":"Do you run a gilding studio, a restoration workshop or a fine-art shop? The B2B catalogue is for those who need gold leaf and gilding materials in volume. We prepare a dedicated quote and help you choose what goes into the order.",
   "p2.h":"E-shop","p2.p":"Are you a chef, a pastry cook or a bartender? Edible 23-carat gold and silver in leaf, flakes, crumbs and powder. No taste, no scent, approved in the EU as colouring E175. Sold by the piece, no minimum order.",
 
   "vt.k":"Our showcase","vt.t":"Our<br>showcase",
